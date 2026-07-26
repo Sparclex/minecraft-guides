@@ -1,0 +1,27 @@
+{
+  "name": "atm10-lite-guides",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Browsable web version of every in-game guide book shipped with the All the Mods 10 Lite modpack.",
+  "scripts": {
+    "generate": "node tools/generate.mjs",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.4",
+    "tailwindcss": "^4.1.14",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.7",
+    "yauzl-promise": "^4.0.0"
+  }
+}

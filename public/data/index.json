@@ -1,0 +1,3471 @@
+{
+  "generatedAt": "2026-07-25T21:32:01.480Z",
+  "generator": "tools/generate.mjs",
+  "pack": {
+    "id": 1298400,
+    "name": "All the Mods 10 Lite",
+    "synopsis": "ATM10 but with a twist and works on most computers",
+    "version": "All The Mods 10 LITE-1.0.1",
+    "versionId": 7420356,
+    "minecraft": "1.21.1",
+    "loader": "neoforge",
+    "website": "https://www.curseforge.com/minecraft/modpacks/all-the-mods-10-lite",
+    "source": "https://github.com/AllTheMods/ATM-10-L",
+    "projectId": 1298400,
+    "repo": "AllTheMods/ATM-10-L"
+  },
+  "totals": {
+    "mods": 203,
+    "modsWithGuides": 19,
+    "books": 12,
+    "categories": 83,
+    "entries": 950,
+    "pages": 3150,
+    "images": 150
+  },
+  "engines": [
+    {
+      "id": "modonomicon",
+      "label": "Modonomicon",
+      "books": 1,
+      "entries": 218
+    },
+    {
+      "id": "guideme",
+      "label": "GuideME",
+      "books": 2,
+      "entries": 235
+    },
+    {
+      "id": "patchouli",
+      "label": "Patchouli",
+      "books": 8,
+      "entries": 471
+    },
+    {
+      "id": "ftbquests",
+      "label": "FTB Quests",
+      "books": 1,
+      "entries": 26
+    }
+  ],
+  "mods": [
+    {
+      "id": "advanced_ae",
+      "name": "Advanced AE",
+      "version": "1.6.9-1.21.1",
+      "description": "An AE2 addon that adds a lot of utilities and quality of life.",
+      "authors": "Pedroksl",
+      "file": "AdvancedAE-1.6.9-1.21.1.jar",
+      "curseforge": {
+        "project": 1084104,
+        "file": 7374386
+      },
+      "guideCount": 19
+    },
+    {
+      "id": "ae2jeiintegration",
+      "name": "AE2 JEI Integration",
+      "version": "1.2.0",
+      "description": "AE2 JEI integration",
+      "authors": "Tamaized, mezz",
+      "file": "ae2jeiintegration-1.2.0.jar",
+      "curseforge": {
+        "project": 1074338,
+        "file": 5748513
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "ae2wtlib",
+      "name": "AE2WTLib",
+      "version": "19.3.0",
+      "description": "Adds Wireless versions of ae2 Terminals with infinite range capabilities.",
+      "authors": "mari_023, Ridanisaurus",
+      "file": "ae2wtlib-19.3.0.jar",
+      "curseforge": {
+        "project": 459929,
+        "file": 7250977
+      },
+      "guideCount": 8
+    },
+    {
+      "id": "aeinfinitybooster",
+      "name": "AEInfinityBooster",
+      "version": "1.21.1-1.0.0.54",
+      "description": "Adds Infinite Range Card and Dimension Card to AE2",
+      "authors": "Hexeption",
+      "file": "aeinfinitybooster-neoforge-1.21.1-1.0.0.54.jar",
+      "curseforge": {
+        "project": 559313,
+        "file": 7402808
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "alltheleaks",
+      "name": "All The Leaks",
+      "version": "1.1.6+1.21.1-neoforge",
+      "description": "This mod fixes memory leaks when needed!",
+      "authors": "Uncandango",
+      "file": "alltheleaks-1.1.6+1.21.1-neoforge.jar",
+      "curseforge": {
+        "project": 1091339,
+        "file": 7398946
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "allthewizardgear",
+      "name": "All the Wizard Gear",
+      "version": "1.21.1-1.1.11",
+      "description": "Allthemodium compat for Iron's Spells 'n Spellbook late game gear",
+      "authors": "Iron431",
+      "file": "allthewizardgear-1.21.1-1.1.11.jar",
+      "curseforge": {
+        "project": 927064,
+        "file": 6916509
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "allthecompressed",
+      "name": "AllTheCompressed",
+      "version": "4.4.0",
+      "description": "Adds 1-9x compressed versions of blocks, and recipes.",
+      "authors": "Pdiddy973",
+      "file": "allthecompressed-1.21.1-4.4.0.jar",
+      "curseforge": {
+        "project": 514045,
+        "file": 7361502
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "allthemodium",
+      "name": "Allthemodium",
+      "version": "2.9.7",
+      "description": "Allthemodium!.\nBrought to you by AllTheMods!",
+      "authors": "thevortex, whatthedrunk",
+      "file": "allthemodium-2.9.7_mc_1.21.1.jar",
+      "curseforge": {
+        "project": 364466,
+        "file": 7397384
+      },
+      "guideCount": 58
+    },
+    {
+      "id": "alltheores",
+      "name": "AllTheOres",
+      "version": "3.1.8",
+      "description": "Commonly found modded ores in one easy spot!.\nBrought to you by AllTheMods!",
+      "authors": "thevortex, whatthedrunk, Satherov",
+      "file": "alltheores-3.1.8_neoforge_1.21.1.jar",
+      "curseforge": {
+        "project": 405593,
+        "file": 7027340
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "allthetweaks",
+      "name": "AllTheTweaks",
+      "version": "2.7.0",
+      "description": "Tweaks for ATM Modpacks!.\nBrought to you by AllTheMods!",
+      "authors": "thevortex, whatthedrunk",
+      "file": "allthetweaks-1.21.1-2.7.0.jar",
+      "curseforge": {
+        "project": 364120,
+        "file": 7219550
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "almostunified",
+      "name": "AlmostUnified",
+      "version": "1.21.1-1.3.0",
+      "description": "Unify all resources.",
+      "authors": "Almost Reliable",
+      "file": "almostunified-neoforge-1.21.1-1.3.0.jar",
+      "curseforge": {
+        "project": 633823,
+        "file": 6847936
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "apotheosis",
+      "name": "Apotheosis",
+      "version": "8.4.1",
+      "description": "All things that should have been",
+      "authors": "Shadows_of_Fire",
+      "file": "Apotheosis-1.21.1-8.4.1.jar",
+      "curseforge": {
+        "project": 313970,
+        "file": 7180713
+      },
+      "guideCount": 711
+    },
+    {
+      "id": "apothic_attributes",
+      "name": "Apothic Attributes",
+      "version": "2.9.0",
+      "description": "A library mod providing Attributes and related things.",
+      "authors": "Shadows_of_Fire",
+      "file": "ApothicAttributes-1.21.1-2.9.0.jar",
+      "curseforge": {
+        "project": 898963,
+        "file": 6751650
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "apothic_enchanting",
+      "name": "Apothic Enchanting",
+      "version": "1.5.0",
+      "description": "The Enchanting Module of Apotheosis, overhauling major enchanting systems.",
+      "authors": "Shadows_of_Fire",
+      "file": "ApothicEnchanting-1.21.1-1.5.0.jar",
+      "curseforge": {
+        "project": 1063926,
+        "file": 6926290
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "apothic_spawners",
+      "name": "Apothic Spawners",
+      "version": "1.3.2",
+      "description": "The Spawner Module of Apotheosis, allowing for silk-touching and modification.",
+      "authors": "Shadows_of_Fire",
+      "file": "ApothicSpawners-1.21.1-1.3.2.jar",
+      "curseforge": {
+        "project": 986583,
+        "file": 6751589
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "appleskin",
+      "name": "AppleSkin",
+      "version": "${file.jarVersion}",
+      "description": "Adds various food-related HUD improvements",
+      "authors": "squeek",
+      "file": "appleskin-neoforge-mc1.21-3.0.7.jar",
+      "curseforge": {
+        "project": 248787,
+        "file": 6616291
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "ae2",
+      "name": "Applied Energistics 2",
+      "version": "19.2.17",
+      "description": "A Mod about Matter, Energy and using them to conquer the world...",
+      "authors": "Team AppliedEnergistics",
+      "file": "appliedenergistics2-19.2.17.jar",
+      "curseforge": {
+        "project": 223794,
+        "file": 7027323
+      },
+      "guideCount": 165
+    },
+    {
+      "id": "appmek",
+      "name": "Applied Mekanistics",
+      "version": "1.6.3",
+      "description": "Use Mekanism resources through your ME network",
+      "authors": "ramidzkh",
+      "file": "Applied-Mekanistics-1.6.3.jar",
+      "curseforge": {
+        "project": 574300,
+        "file": 7096962
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "appflux",
+      "name": "AppliedFlux",
+      "version": "1.21-2.1.3-neoforge",
+      "description": "Store energy in cells!",
+      "authors": "GlodBlock",
+      "file": "AppliedFlux-1.21-2.1.3-neoforge.jar",
+      "curseforge": {
+        "project": 965012,
+        "file": 6649565
+      },
+      "guideCount": 15
+    },
+    {
+      "id": "aquaculture",
+      "name": "Aquaculture 2",
+      "version": "2.7.17",
+      "description": "Welcome to Aquaculture! An expansion of Minecraft's fishing system.",
+      "authors": "Shadowclaimer, Girafi",
+      "file": "Aquaculture-1.21.1-2.7.17.jar",
+      "curseforge": {
+        "project": 60028,
+        "file": 7331325
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "architectury",
+      "name": "Architectury",
+      "version": "13.0.8",
+      "description": "A intermediary api aimed to ease developing multiplatform mods.",
+      "authors": "shedaniel",
+      "file": "architectury-13.0.8-neoforge.jar",
+      "curseforge": {
+        "project": 419699,
+        "file": 5786327
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "artifacts",
+      "name": "Artifacts",
+      "version": "13.1.0",
+      "description": "Adds various new powerful uncraftable items to make exploration a bit more interesting",
+      "authors": "ochotonida",
+      "file": "artifacts-neoforge-13.1.0.jar",
+      "curseforge": {
+        "project": 312353,
+        "file": 7113293
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "atlas_api",
+      "name": "Atlas API",
+      "version": "1.21.1-1.2.0",
+      "description": "Provides an API for generating atlases during game runtime, and helpers for loading custom item models using the dynamic atlas sprites",
+      "authors": "Iron431",
+      "file": "atlas_api-1.21.1-1.2.0.jar",
+      "curseforge": {
+        "project": 1145462,
+        "file": 6880789
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "attributefix",
+      "name": "AttributeFix",
+      "version": "21.1.3",
+      "description": "Extends the maximum attribute ranges to allow for higher values.",
+      "authors": "Darkhax",
+      "file": "attributefix-neoforge-1.21.1-21.1.3.jar",
+      "curseforge": {
+        "project": 280510,
+        "file": 7115922
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "bwncr",
+      "name": "Bad Wither No Cookie Reloaded",
+      "version": "${file.jarVersion}",
+      "description": "Silence server level sounds making them local in the process.\n\nOther sounds can be silenced even further such as sheep\neating grass, cows mooing, you name it.\n\nIf it makes a sound it can be silenced!",
+      "authors": "Kreezxil, Eleksploded",
+      "file": "bwncr-neoforge-1.21.1-3.20.3.jar",
+      "curseforge": {
+        "project": 261251,
+        "file": 6172735
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "balm",
+      "name": "Balm",
+      "version": "21.0.55",
+      "description": "Abstraction Layer (but not really) for Blay's multiplatform mods",
+      "authors": "BlayTheNinth",
+      "file": "balm-neoforge-1.21.1-21.0.55.jar",
+      "curseforge": {
+        "project": 531761,
+        "file": 7264790
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "bhc",
+      "name": "Baubley Heart Canisters",
+      "version": "1.21.1-1.3.1",
+      "description": "Heart Canisters for Curios, enjoy! :D",
+      "authors": "Traverse_Joe",
+      "file": "baubley-heart-canisters-1.21.1-1.3.1.jar",
+      "curseforge": {
+        "project": 282947,
+        "file": 7394811
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "betteradvancements",
+      "name": "Better Advancements",
+      "version": "0.4.3.21",
+      "description": "Improvements to the advancements screen.",
+      "authors": "way2muchnoise",
+      "file": "BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar",
+      "curseforge": {
+        "project": 272515,
+        "file": 5850587
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "bcc",
+      "name": "Better Compatibility Checker",
+      "version": "21.1.8",
+      "description": "Modpack compatibility checker for servers",
+      "authors": "Gaz(Gaz492)",
+      "file": "better-compatability-checker-neoforge-21.1.8.jar",
+      "curseforge": {
+        "project": 551894,
+        "file": 7404415
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "bookshelf",
+      "name": "Bookshelf",
+      "version": "21.1.80",
+      "description": "Bookshelf is a library mod that provides code, frameworks, and utilities for other mods. Many mods make use of Bookshelf and are powered by its code.",
+      "authors": "Darkhax",
+      "file": "bookshelf-neoforge-1.21.1-21.1.80.jar",
+      "curseforge": {
+        "project": 228525,
+        "file": 7335846
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "catjammies",
+      "name": "CatJammies",
+      "version": "${file.jarVersion}",
+      "description": "CatJam is the best",
+      "authors": "Buuz135",
+      "file": "catjammies-1.21-1.7.1.jar",
+      "curseforge": {
+        "project": 430906,
+        "file": 5806687
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "cleanswing",
+      "name": "Clean Swing",
+      "version": "1.9",
+      "description": "Stop hitting Grass instead of Creepers",
+      "authors": "Raycoms",
+      "file": "cleanswing-1.9.jar",
+      "curseforge": {
+        "project": 915308,
+        "file": 6153780
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "cloth_config",
+      "name": "Cloth Config v15 API",
+      "version": "15.0.140",
+      "description": "An API for config screens.",
+      "authors": null,
+      "file": "cloth-config-15.0.140-neoforge.jar",
+      "curseforge": {
+        "project": 348521,
+        "file": 5729127
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "clumps",
+      "name": "Clumps",
+      "version": "19.0.0.1",
+      "description": "Clumps xp orbs together.",
+      "authors": "Jared",
+      "file": "Clumps-neoforge-1.21.1-19.0.0.1.jar",
+      "curseforge": {
+        "project": 256717,
+        "file": 5623731
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "cobweb",
+      "name": "Cobweb",
+      "version": "1.4.0",
+      "description": "Crystal Nest API",
+      "authors": "Crystal Spider, Moonstone Webber, Noir",
+      "file": "cobweb-neoforge-1.21-1.4.0.jar",
+      "curseforge": {
+        "project": 968456,
+        "file": 7186943
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "codechickenlib",
+      "name": "CodeChicken Lib",
+      "version": "4.6.1.526",
+      "description": "CodeChickenLib is a library of systems to help make various aspects of minecraft modding easier.\nIt contains libraries for 3D math and transformations, model rendering, packets, config, colours, asm and a few other things..",
+      "authors": "ChickenBones, covers1624",
+      "file": "CodeChickenLib-1.21.1-4.6.1.526.jar",
+      "curseforge": {
+        "project": 242818,
+        "file": 7281427
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "colorfulhearts",
+      "name": "Colorful Hearts",
+      "version": "10.5.9",
+      "description": "A client side mod that replaces multiple vanilla heart rows with a single row using colored hearts",
+      "authors": "Terrails",
+      "file": "colorfulhearts-neoforge-1.21.1-10.5.9.jar",
+      "curseforge": {
+        "project": 854213,
+        "file": 6830399
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "configured",
+      "name": "Configured",
+      "version": "2.6.3",
+      "description": "Creates a simple GUI config for every mod!",
+      "authors": "MrCrayfish",
+      "file": "configured-neoforge-1.21.1-2.6.3.jar",
+      "curseforge": {
+        "project": 457570,
+        "file": 7276577
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "connectivity",
+      "name": "Connectivity Mod",
+      "version": "7.6",
+      "description": "Lightweight mod which solves connection and packet size issues",
+      "authors": "Someaddon",
+      "file": "connectivity-1.21.1-7.6.jar",
+      "curseforge": {
+        "project": 470193,
+        "file": 7367221
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "constructionstick",
+      "name": "Construction Sticks",
+      "version": "${file.jarVersion}",
+      "description": "Construction Sticks make building easier!\n\nWith a Construction Stick you can place multiple blocks (up to 1024) at once, extending your build on the side you're\nfacing. If that's not enough: you can upgrade your wand with additional cores, allowing you to place a block\nbehind the block you are facing, conjure blocks in mid air or destroy lots of blocks very fast.",
+      "authors": "Mrbysco, ShyNieke",
+      "file": "ConstructionSticks-1.21.1-1.2.3.jar",
+      "curseforge": {
+        "project": 1156098,
+        "file": 6912513
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "controlling",
+      "name": "Controlling",
+      "version": "19.0.5",
+      "description": "Adds the ability to search for keybinds using their name in the KeyBinding menu, this allows players to easily find a key binding in the menu.",
+      "authors": "Jaredlll08",
+      "file": "Controlling-neoforge-1.21.1-19.0.5.jar",
+      "curseforge": {
+        "project": 250398,
+        "file": 6368976
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "cookingforblockheads",
+      "name": "Cooking for Blockheads",
+      "version": "21.1.17",
+      "description": "Adds a cooking book and multiblock kitchens that only shows recipes you can make with what you currently have in your inventory.",
+      "authors": "BlayTheNinth",
+      "file": "cookingforblockheads-neoforge-1.21.1-21.1.17.jar",
+      "curseforge": {
+        "project": 231484,
+        "file": 6975904
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "cosmeticarmorreworked",
+      "name": "CosmeticArmorReworked",
+      "version": "1.21.1-v1-neoforge",
+      "description": "This mod allows you to wear two sets of armor, one for display, one for function. You can also hide armor for your skin. For PVP, you can stop the mod from functioning on your client side.",
+      "authors": "zlainsama",
+      "file": "cosmeticarmorreworked-1.21.1-v1-neoforge.jar",
+      "curseforge": {
+        "project": 237307,
+        "file": 5610814
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "crafting_on_a_stick",
+      "name": "Crafting On A Stick",
+      "version": "1.21.0.4",
+      "description": "This mod adds multiple workbenches on a stick:\n - Crafting Table\n - Anvil\n - Loom\n - Grindstone\n - Grindstone\n - Cartography Table\n - Cartography Table\n - Stonecutter\n - Smithing Table",
+      "authors": "OfekN",
+      "file": "crafting_on_a_stick-1.21.0.4.jar",
+      "curseforge": {
+        "project": 577850,
+        "file": 7394335
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "craftingtweaks",
+      "name": "Crafting Tweaks",
+      "version": "21.1.6",
+      "description": "Allows you to rotate, balance or clear the crafting matrix by the press of a button, in any (supported) crafting window.",
+      "authors": "BlayTheNinth",
+      "file": "craftingtweaks-neoforge-1.21.1-21.1.6.jar",
+      "curseforge": {
+        "project": 233071,
+        "file": 6784518
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "crash_assistant",
+      "name": "Crash Assistant",
+      "version": "1.10.28",
+      "description": "Shows a GUI after Minecraft crashes, immediately showing all affected logs, crash reports, or hs_err files. Provides a one-click solution to upload them, copy the link, and perform other actions for easier reporting, debugging, and troubleshooting, like analysis log for the most common crash reasons.",
+      "authors": "KostromDan",
+      "file": "CrashAssistant-neoforge-1.20.6-1.21.4-1.10.28.jar",
+      "curseforge": {
+        "project": 1154099,
+        "file": 7374773
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "crashutilities",
+      "name": "Crash Utilities",
+      "version": "9.0.4",
+      "description": "Mod for debugging and fixing Modded Minecraft Issues",
+      "authors": "Darkere",
+      "file": "crashutilities-9.0.4.jar",
+      "curseforge": {
+        "project": 371813,
+        "file": 5993450
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "croptopia",
+      "name": "Croptopia",
+      "version": "4.2.1",
+      "description": "Croptopia - For Neoforge",
+      "authors": "iThonk, Rainbowcraft",
+      "file": "croptopia_1.21.1_NEO-FORGE-4.2.1.jar",
+      "curseforge": {
+        "project": 415438,
+        "file": 6788725
+      },
+      "guideCount": 861
+    },
+    {
+      "id": "crystalix",
+      "name": "Crystalix",
+      "version": "2.4.0",
+      "description": "Adds a bunch of colored glass blocks with special properties.",
+      "authors": "Satherov",
+      "file": "crystalix-2.4.0.jar",
+      "curseforge": {
+        "project": 1187033,
+        "file": 7365147
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "cucumber",
+      "name": "Cucumber Library",
+      "version": "8.0.15",
+      "description": "A library of shared code that all of my mods depend on.",
+      "authors": "BlakeBr0",
+      "file": "Cucumber-1.21.1-8.0.15.jar",
+      "curseforge": {
+        "project": 272335,
+        "file": 7180790
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "cupboard",
+      "name": "Cupboard mod",
+      "version": "2.9",
+      "description": "Cupboard library for utilities and configs",
+      "authors": "Someaddon",
+      "file": "cupboard-1.21-2.9.jar",
+      "curseforge": {
+        "project": 326652,
+        "file": 6078150
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "curios",
+      "name": "Curios API",
+      "version": "9.5.1+1.21.1",
+      "description": "A flexible and expandable accessory/equipment API for users and developers.",
+      "authors": "C4",
+      "file": "curios-neoforge-9.5.1+1.21.1.jar",
+      "curseforge": {
+        "project": 309927,
+        "file": 6529130
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "darkmodeeverywhere",
+      "name": "Dark Mode Everywhere",
+      "version": "1.21-1.3.5",
+      "description": "Dark Mode GUIs Everywhere",
+      "authors": "Buuz135",
+      "file": "darkmodeeverywhere-1.21-1.3.5.jar",
+      "curseforge": {
+        "project": 574123,
+        "file": 6470153
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "defaultoptions",
+      "name": "Default Options",
+      "version": "21.1.5",
+      "description": "A way for modpacks to ship a default (key) configuration without having to include an options.txt file. Also allows local options from any mod .cfg file.",
+      "authors": "BlayTheNinth",
+      "file": "defaultoptions-neoforge-1.21.1-21.1.5.jar",
+      "curseforge": {
+        "project": 232131,
+        "file": 6972485
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "easy_villagers",
+      "name": "Easy Villagers",
+      "version": "1.21.1-1.1.40",
+      "description": "Easy Villagers",
+      "authors": "Max Henkel",
+      "file": "easy-villagers-neoforge-1.21.1-1.1.40.jar",
+      "curseforge": {
+        "project": 400514,
+        "file": 7340307
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "elevatorid",
+      "name": "ElevatorMod",
+      "version": "1.21.1-1.11.4",
+      "description": "Simple port of the elevator from OpenBlocks to 1.8+",
+      "authors": "VsnGamer",
+      "file": "elevatorid-neoforge-1.21.1-1.11.4.jar",
+      "curseforge": {
+        "project": 250832,
+        "file": 6199696
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "enchdesc",
+      "name": "EnchantmentDescriptions",
+      "version": "21.1.9",
+      "description": "Adds descriptions of enchantment effects to their descriptions.",
+      "authors": "Darkhax",
+      "file": "enchdesc-neoforge-1.21.1-21.1.9.jar",
+      "curseforge": {
+        "project": 250419,
+        "file": 7039849
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "enderstorage",
+      "name": "EnderStorage",
+      "version": "2.13.0.191",
+      "description": "Stores your stuff in the END!\n    Credits: Ecu - original idea, design, chest and pouch texture\n    Rosethorns - tank model\n    Soaryn - tank texture",
+      "authors": "ChickenBones, covers1624",
+      "file": "EnderStorage-1.21.1-2.13.0.191.jar",
+      "curseforge": {
+        "project": 245174,
+        "file": 6159037
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "epherolib",
+      "name": "EpheroLib",
+      "version": "1.2.0",
+      "description": "Epherolib for all Epherical Mods",
+      "authors": "Thonk",
+      "file": "EpheroLib-1.21.1-NEO-FORGE-1.2.0.jar",
+      "curseforge": {
+        "project": 885449,
+        "file": 5872111
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "epitaphs",
+      "name": "Epitaphs",
+      "version": "1.0.11",
+      "description": "A basic grave mod doing just that",
+      "authors": "Satherov",
+      "file": "epitaphs-1.0.11_neoforge_1.21.1.jar",
+      "curseforge": {
+        "project": 1325482,
+        "file": 7276426
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "euphoria_patcher",
+      "name": "Euphoria Patcher",
+      "version": "1.7.8-r5.6.1-neoforge",
+      "description": "A mod that applies the Euphoria Patches add-on to Complementary Shaders.\nReport issues on discord!",
+      "authors": "SpacEagle17",
+      "file": "EuphoriaPatcher-1.7.8-r5.6.1-neoforge.jar",
+      "curseforge": {
+        "project": 915902,
+        "file": 7236770
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "explorerscompass",
+      "name": "Explorer's Compass",
+      "version": "1.21.1-3.0.3-neoforge",
+      "description": "Search for and locate structures anywhere in the world.",
+      "authors": "ChaosTheDude",
+      "file": "ExplorersCompass-1.21.1-3.0.3-neoforge.jar",
+      "curseforge": {
+        "project": 491794,
+        "file": 5756947
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "extendedcrafting",
+      "name": "Extended Crafting",
+      "version": "7.0.7",
+      "description": "Adds some new ways to craft items, as well as extra crafting items and utilities.",
+      "authors": "BlakeBr0",
+      "file": "ExtendedCrafting-1.21.1-7.0.7.jar",
+      "curseforge": {
+        "project": 268387,
+        "file": 7180800
+      },
+      "guideCount": 13
+    },
+    {
+      "id": "extendedae",
+      "name": "ExtendedAE",
+      "version": "1.21-2.2.27-neoforge",
+      "description": "Add some QoL extended contents for AE2",
+      "authors": "GlodBlock",
+      "file": "ExtendedAE-1.21-2.2.27-neoforge.jar",
+      "curseforge": {
+        "project": 892005,
+        "file": 7356474
+      },
+      "guideCount": 74
+    },
+    {
+      "id": "extremesoundmuffler",
+      "name": "Extreme Sound Muffler",
+      "version": "3.52",
+      "description": "This mod allows you to muffle (almost) any sound selectively,\nallowing you to choose the volume of the sound you want between mute and 90%.\nThis mod also works Clientside only.",
+      "authors": "LeoBeliik",
+      "file": "ExtremeSoundMuffler-3.52_NeoForge-1.21.jar",
+      "curseforge": {
+        "project": 363363,
+        "file": 7371214
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "farmersdelight",
+      "name": "Farmer's Delight",
+      "version": "1.2.9",
+      "description": "A cozy farming and cooking expansion for Minecraft!",
+      "authors": "vectorwing",
+      "file": "FarmersDelight-1.21.1-1.2.9.jar",
+      "curseforge": {
+        "project": 398521,
+        "file": 6917256
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "farmingforblockheads",
+      "name": "Farming for Blockheads",
+      "version": "21.1.10",
+      "description": "Adds a seed market with a search bar and a scrolling grid and more farming utilities.",
+      "authors": "BlayTheNinth",
+      "file": "farmingforblockheads-neoforge-1.21.1-21.1.10.jar",
+      "curseforge": {
+        "project": 261924,
+        "file": 7211446
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "farsight_view",
+      "name": "Farsight mod",
+      "version": "4.5",
+      "description": "Simple efficient mod to yield higher view distances on client side, regardless of serverside settings",
+      "authors": "Someaddon",
+      "file": "farsight-1.21.1-4.5.jar",
+      "curseforge": {
+        "project": 495693,
+        "file": 7016590
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "fastsuite",
+      "name": "Fast Suite",
+      "version": "6.0.5",
+      "description": "Introduces multithreading to the json recipe system.",
+      "authors": "Shadows_of_Fire",
+      "file": "FastSuite-1.21.1-6.0.5.jar",
+      "curseforge": {
+        "project": 475117,
+        "file": 6751538
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "fastbench",
+      "name": "Fast Workbench",
+      "version": "9.1.3",
+      "description": "Speeding up crafting operations - massively.",
+      "authors": "Shadows_of_Fire",
+      "file": "FastWorkbench-1.21.1-9.1.3.jar",
+      "curseforge": {
+        "project": 288885,
+        "file": 6751534
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "fastfurnace",
+      "name": "FastFurnace",
+      "version": "9.0.1",
+      "description": "Furnacing things faster, performance-wise",
+      "authors": "Shadows_of_Fire",
+      "file": "FastFurnace-1.21.1-9.0.1.jar",
+      "curseforge": {
+        "project": 299540,
+        "file": 6751551
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "fastleafdecay",
+      "name": "FastLeafDecay",
+      "version": "35",
+      "description": "Increases leaves decay rate, so that you won't end up with a bunch of floating leaves.",
+      "authors": "Olafski",
+      "file": "fastleafdecay-35.jar",
+      "curseforge": {
+        "project": 230976,
+        "file": 5849090
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "ferritecore",
+      "name": "Ferrite Core",
+      "version": "7.0.2",
+      "description": "Reduces memory usage.",
+      "authors": "malte0811",
+      "file": "ferritecore-7.0.2-neoforge.jar",
+      "curseforge": {
+        "project": 429235,
+        "file": 5850121
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "flowerpatch",
+      "name": "Flower Patch",
+      "version": "${file.jarVersion}",
+      "description": "Allows you to combine multiple of the same flower similar to how you can have multiple sea pickles and candles in a block space.",
+      "authors": "Mrbysco, ShyNieke",
+      "file": "FlowerPatch-neoforge-1.21.1-7.1.0.jar",
+      "curseforge": {
+        "project": 641038,
+        "file": 6281047
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "fluxnetworks",
+      "name": "Flux Networks",
+      "version": "8.0.0",
+      "description": "Wireless Energy Networks",
+      "authors": "Sonar Sonic, BloCamLimb",
+      "file": "FluxNetworks-1.21.1-8.0.0.jar",
+      "curseforge": {
+        "project": 248020,
+        "file": 6089446
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "ftbchunks",
+      "name": "FTB Chunks",
+      "version": "2101.1.13",
+      "description": "Claim chunks to protect your base from griefers!",
+      "authors": "FTB Team",
+      "file": "ftb-chunks-neoforge-2101.1.13.jar",
+      "curseforge": {
+        "project": 314906,
+        "file": 7157142
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "ftbessentials",
+      "name": "FTB Essentials",
+      "version": "2101.1.8",
+      "description": "Adds many essential utility commands for servers",
+      "authors": "FTB Team",
+      "file": "ftb-essentials-neoforge-2101.1.8.jar",
+      "curseforge": {
+        "project": 410811,
+        "file": 7209620
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "ftbfiltersystem",
+      "name": "FTB Filter System",
+      "version": "21.1.3",
+      "description": "Smart and highly configurable item filtering system with useful GUI configuration",
+      "authors": "FTB Team",
+      "file": "ftb-filter-system-neoforge-21.1.3.jar",
+      "curseforge": {
+        "project": 943925,
+        "file": 6899527
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "ftbjeiextras",
+      "name": "FTB Jei Extras",
+      "version": "21.1.7",
+      "description": "Stand in mod to add extra JEI support for mods that don't have it.",
+      "authors": "FTB Team",
+      "file": "ftb-jei-extras-21.1.7.jar",
+      "curseforge": {
+        "project": 1103259,
+        "file": 6695679
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "ftblibrary",
+      "name": "FTB Library",
+      "version": "2101.1.29",
+      "description": "FTB Library adds nothing.",
+      "authors": "FTB Team",
+      "file": "ftb-library-neoforge-2101.1.29.jar",
+      "curseforge": {
+        "project": 404465,
+        "file": 7312258
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "ftbquests",
+      "name": "FTB Quests",
+      "version": "2101.1.20",
+      "description": "Lets you easily create and play with quests",
+      "authors": "FTB Team",
+      "file": "ftb-quests-neoforge-2101.1.20.jar",
+      "curseforge": {
+        "project": 289412,
+        "file": 7324136
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "ftbquestslangsplitter",
+      "name": "FTB Quests Lang Splitter",
+      "version": "1.0.5",
+      "description": "This mod splits the lang files of FTB Quests to better control versioning.",
+      "authors": "Uncandango",
+      "file": "ftbquestslangsplitter-1.0.5.jar",
+      "curseforge": {
+        "project": 1326856,
+        "file": 6975768
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "ftbranks",
+      "name": "FTB Ranks",
+      "version": "2101.1.3",
+      "description": "A simple mod that lets you create ranks for players, similar to Discord roles, and manage permissions for them",
+      "authors": "FTB Team",
+      "file": "ftb-ranks-neoforge-2101.1.3.jar",
+      "curseforge": {
+        "project": 314905,
+        "file": 6431744
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "ftbteams",
+      "name": "FTB Teams",
+      "version": "2101.1.9",
+      "description": "FTB Teams adds ability to create your own teams that can be used for quests etc.",
+      "authors": "FTB Team",
+      "file": "ftb-teams-neoforge-2101.1.9.jar",
+      "curseforge": {
+        "project": 404468,
+        "file": 7369021
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "ftbultimine",
+      "name": "FTB Ultimine",
+      "version": "2101.1.12",
+      "description": "Allows you to break multiple blocks at once",
+      "authors": "FTB Team",
+      "file": "ftb-ultimine-neoforge-2101.1.12.jar",
+      "curseforge": {
+        "project": 386134,
+        "file": 7188395
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "ftbxmodcompat",
+      "name": "FTB XMod Compat",
+      "version": "21.1.6",
+      "description": "Provides cross-mod compatibilty/integration for all main FTB mods",
+      "authors": "FTB Team",
+      "file": "ftb-xmod-compat-neoforge-21.1.6.jar",
+      "curseforge": {
+        "project": 889915,
+        "file": 6979171
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "fuelgoeshere",
+      "name": "Fuel Goes Here",
+      "version": "1.21.1-1.2.0",
+      "description": "Fuel should go to the fuel slot first even when there's a smelting recipe for it.",
+      "authors": "LobsterJonn",
+      "file": "fuelgoeshere-1.21.1-1.2.0.jar",
+      "curseforge": {
+        "project": 659090,
+        "file": 6003423
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "functionalstorage",
+      "name": "Functional Storage",
+      "version": "${file.jarVersion}",
+      "description": "Functional Storage",
+      "authors": "Buuz135, Rid",
+      "file": "functionalstorage-1.21.1-1.5.5.jar",
+      "curseforge": {
+        "project": 556861,
+        "file": 7061714
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "fusion",
+      "name": "Fusion",
+      "version": "1.2.11+e",
+      "description": "Fusion allows resource packs to use additional texture and model types such as connected textures!",
+      "authors": "SuperMartijn642",
+      "file": "fusion-1.2.11e-neoforge-mc1.21.1.jar",
+      "curseforge": {
+        "project": 854949,
+        "file": 7419385
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "gateways",
+      "name": "Gateways To Eternity",
+      "version": "5.1.0",
+      "description": "Adds combat-based events which provide various rewards and challenges.",
+      "authors": "Shadows_of_Fire",
+      "file": "GatewaysToEternity-1.21.1-5.1.0.jar",
+      "curseforge": {
+        "project": 417802,
+        "file": 6926284
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "geckolib",
+      "name": "GeckoLib 4",
+      "version": "4.8.3",
+      "description": "GeckoLib is an animation engine for Minecraft Mods, with support for complex 3D keyframe-based animations, 30+ easings, concurrent animation support, sound and particle keyframes, event keyframes, and more.",
+      "authors": "Gecko, Eliot, AzureDoom, DerToaster, Tslat, Witixin",
+      "file": "geckolib-neoforge-1.21.1-4.8.3.jar",
+      "curseforge": {
+        "project": 388172,
+        "file": 7415496
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "geore",
+      "name": "GeOre",
+      "version": "${file.jarVersion}",
+      "description": "This mod takes heavy inspiration of the vanilla amethyst geode feature and applies it to other valuables to.",
+      "authors": "ShyNieke, Mrbysco",
+      "file": "GeOre-1.21.1-6.2.1.jar",
+      "curseforge": {
+        "project": 530544,
+        "file": 7075069
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "getittogetherdrops",
+      "name": "Get It Together, Drops!",
+      "version": "${file.jarVersion}",
+      "description": "Adds configuration options for defining how dropped items should combine.",
+      "authors": "bl4ckscor3",
+      "file": "getittogetherdrops-neoforge-1.21.5-1.4.jar",
+      "curseforge": {
+        "project": 411045,
+        "file": 6775278
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "glodium",
+      "name": "Glodium",
+      "version": "1.21-2.2-neoforge",
+      "description": "Codelib",
+      "authors": "GlodBlock",
+      "file": "Glodium-1.21-2.2-neoforge.jar",
+      "curseforge": {
+        "project": 957920,
+        "file": 5821676
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "guideme",
+      "name": "GuideME",
+      "version": "21.1.15",
+      "description": "GuideME offers the foundation for your mods or modpacks guidebook.",
+      "authors": null,
+      "file": "guideme-21.1.15.jar",
+      "curseforge": {
+        "project": 1173950,
+        "file": 7127444
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "harvest_with_ease",
+      "name": "Harvest with ease",
+      "version": "9.4.0",
+      "description": "Don't break crops, right click them!",
+      "authors": "Crystal Spider, Moonstone Webber, Noir",
+      "file": "harvest-with-ease-neoforge-1.21-9.4.0.jar",
+      "curseforge": {
+        "project": 602171,
+        "file": 5968872
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "hellish_trials",
+      "name": "Hellish Trials",
+      "version": "1.0.4",
+      "description": "Generates unique Trial Chambers in the Nether dimension!",
+      "authors": "Aureljz, Kaapre",
+      "file": "HellishTrials-neoforge-1.0.4.jar",
+      "curseforge": {
+        "project": 1414295,
+        "file": 7394876
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "hostilenetworks",
+      "name": "Hostile Neural Networks",
+      "version": "6.3.0",
+      "description": "Defeating hostile entities - but in simulations!",
+      "authors": "Shadows_of_Fire",
+      "file": "HostileNeuralNetworks-1.21.1-6.3.0.jar",
+      "curseforge": {
+        "project": 552574,
+        "file": 6751495
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "iceberg",
+      "name": "Iceberg",
+      "version": "1.3.2",
+      "description": "A library containing events, helpers, and utilities to make modding easier.",
+      "authors": "Grend",
+      "file": "Iceberg-1.21.1-neoforge-1.3.2.jar",
+      "curseforge": {
+        "project": 520110,
+        "file": 6423863
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "immediatelyfast",
+      "name": "ImmediatelyFast",
+      "version": "1.6.9+1.21.1",
+      "description": "Speed up and optimize immediate mode rendering in Minecraft",
+      "authors": "RK_01",
+      "file": "ImmediatelyFast-NeoForge-1.6.9+1.21.1.jar",
+      "curseforge": {
+        "project": 686911,
+        "file": 7349649
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "industrialforegoing",
+      "name": "Industrial Foregoing",
+      "version": "1.21-3.6.37",
+      "description": "Automate Everything",
+      "authors": "Buuz135",
+      "file": "industrialforegoing-1.21-3.6.37.jar",
+      "curseforge": {
+        "project": 266515,
+        "file": 7366838
+      },
+      "guideCount": 160
+    },
+    {
+      "id": "inventoryessentials",
+      "name": "Inventory Essentials",
+      "version": "21.1.12",
+      "description": "Basic inventory tweaks. Lightweight and compatible.",
+      "authors": "BlayTheNinth",
+      "file": "inventoryessentials-neoforge-1.21.1-21.1.12.jar",
+      "curseforge": {
+        "project": 368825,
+        "file": 7316139
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "invtweaks",
+      "name": "Inventory Tweaks Refoxed",
+      "version": "1.21.1-1.3.2",
+      "description": "Inventory Tweaks, but for modern versions of Minecraft.",
+      "authors": "LobsterJonn (Current maintainer)",
+      "file": "invtweaks-1.21.1-1.3.2.jar",
+      "curseforge": {
+        "project": 976858,
+        "file": 6407807
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "iris",
+      "name": "Iris",
+      "version": "1.8.12-snapshot+mc1.21.1-local",
+      "description": "Iris is a modern shaders mod for Minecraft intended to be compatible with existing OptiFine shader packs.",
+      "authors": "coderbot, IMS212",
+      "file": "iris-neoforge-1.8.12+mc1.21.1.jar",
+      "curseforge": {
+        "project": 455508,
+        "file": 6661598
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "ironfurnaces",
+      "name": "Iron Furnaces",
+      "version": "4.3.2",
+      "description": "IronFurnaces introduces a selection of metal furnaces, offering different tiers to fulfill your smelting needs effortlessly.",
+      "authors": "Qelifern (pizzaatime), XenoMustache",
+      "file": "ironfurnaces-neoforge-1.21.1-4.3.2.jar",
+      "curseforge": {
+        "project": 237664,
+        "file": 7034259
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "ironjetpacks",
+      "name": "Iron Jetpacks",
+      "version": "8.0.11",
+      "description": "A fully customizable FE powered jetpacks mod!",
+      "authors": "BlakeBr0",
+      "file": "IronJetpacks-1.21.1-8.0.11.jar",
+      "curseforge": {
+        "project": 284497,
+        "file": 7105279
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "irons_jewelry",
+      "name": "Iron's Gems 'n Jewelry",
+      "version": "1.21.1-1.6.0",
+      "description": "Iron's Gems 'n Jewelry adds a dynamic jewelcrafting system with supporting content and mechanics",
+      "authors": "Iron431",
+      "file": "irons_jewelry-1.21.1-1.6.0.jar",
+      "curseforge": {
+        "project": 1101111,
+        "file": 7358426
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "irons_spellbooks",
+      "name": "Iron's Spells 'n Spellbooks",
+      "version": "1.21.1-3.15.0",
+      "description": "A magic mod for Minecraft returning to the classic RPG spellcasting fantasy.",
+      "authors": "Iron431, Lab3",
+      "file": "irons_spellbooks-1.21.1-3.15.0.jar",
+      "curseforge": {
+        "project": 855414,
+        "file": 7402503
+      },
+      "guideCount": 38
+    },
+    {
+      "id": "itemcollectors",
+      "name": "Item Collectors",
+      "version": "1.1.10",
+      "description": "Item Collectors adds Collectors which collect items in a specified range! Item Collectors range can be changed and items can be whitelisted or blacklisted!",
+      "authors": "SuperMartijn642",
+      "file": "itemcollectors-1.1.10-neoforge-mc1.21.jar",
+      "curseforge": {
+        "project": 395620,
+        "file": 5550187
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "jade",
+      "name": "Jade",
+      "version": "${file.jarVersion}",
+      "description": "Minecraft mod shows what you are looking at. (Hwyla fork)",
+      "authors": "Snownee",
+      "file": "Jade-1.21.1-NeoForge-15.10.3.jar",
+      "curseforge": {
+        "project": 324717,
+        "file": 6853386
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "jadeaddons",
+      "name": "Jade Addons",
+      "version": "${file.jarVersion}",
+      "description": "Jade additional mod supports",
+      "authors": "Snownee",
+      "file": "JadeAddons-1.21.1-NeoForge-6.1.0.jar",
+      "curseforge": {
+        "project": 583345,
+        "file": 6315149
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "jumpboat",
+      "name": "Jumpy Boats",
+      "version": "1.21.0-1.0.5",
+      "description": "Makes it possible to jump a little while in a boat to transition from water to ground.\n\nSee if you can find a boat.",
+      "authors": "LobsterJonn",
+      "file": "jumpboat-1.21.0-1.0.5.jar",
+      "curseforge": {
+        "project": 542110,
+        "file": 5439938
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "jearchaeology",
+      "name": "Just Enough Archaeology",
+      "version": "1.21.1-1.1.6",
+      "description": "JEI and EMI integration for the archaeology system and for sniffers added in 1.20",
+      "authors": "LobsterJonn",
+      "file": "jearchaeology-1.21.1-1.1.6.jar",
+      "curseforge": {
+        "project": 890755,
+        "file": 6329637
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "justenoughbreeding",
+      "name": "Just Enough Breeding",
+      "version": "1.6.2",
+      "description": "JEI/REI/EMI plugin that displays breeding information",
+      "authors": "Christofmeg",
+      "file": "justenoughbreeding-neoforge-1.21-1.21.1-1.6.2.jar",
+      "curseforge": {
+        "project": 899386,
+        "file": 6816404
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "jei",
+      "name": "Just Enough Items",
+      "version": "19.27.0.339",
+      "description": "JEI is an item and recipe viewing mod for Minecraft, built from the ground up for stability and performance.",
+      "authors": "mezz",
+      "file": "jei-1.21.1-neoforge-19.27.0.339.jar",
+      "curseforge": {
+        "project": 238222,
+        "file": 7416540
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "jei_mekanism_multiblocks",
+      "name": "Just Enough Mekanism Multiblocks",
+      "version": "7.12",
+      "description": "Add JEI page for calculate mekanism multiblock cost",
+      "authors": "gisellevonbingen",
+      "file": "JustEnoughMekanismMultiblocks-1.21.1-7.12.jar",
+      "curseforge": {
+        "project": 898746,
+        "file": 7408168
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "justenoughprofessions",
+      "name": "Just Enough Professions (JEP)",
+      "version": "${file.jarVersion}",
+      "description": "Adds info about professions to JEI",
+      "authors": "Mrbysco, ShyNieke",
+      "file": "JustEnoughProfessions-neoforge-1.21.1-4.0.4.jar",
+      "curseforge": {
+        "project": 417645,
+        "file": 6231254
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "jeresources",
+      "name": "Just Enough Resources",
+      "version": "1.6.0.17",
+      "description": "Adds Resources and Mob Drops to JEI",
+      "authors": "way2muchnoise",
+      "file": "JustEnoughResources-NeoForge-1.21.1-1.6.0.17.jar",
+      "curseforge": {
+        "project": 240630,
+        "file": 6506298
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "keybindbundles",
+      "name": "KeyBind Bundles",
+      "version": "1.3.1",
+      "description": "Bundle keybinds into radial menus",
+      "authors": "Matyrobbrt",
+      "file": "keybindbundles-1.3.1.jar",
+      "curseforge": {
+        "project": 1172594,
+        "file": 6896142
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "keybindspurger",
+      "name": "KeybindsPurger",
+      "version": "1.3.4",
+      "description": "Unset all keybinds for a clean slate",
+      "authors": "ZedDevStuff",
+      "file": "keybindspurger-1.21.x-neoforge-1.3.4.jar",
+      "curseforge": {
+        "project": 1099143,
+        "file": 6986027
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "kotlinforforge-5.10.0-all",
+      "name": "kotlinforforge-5.10.0-all",
+      "version": null,
+      "description": null,
+      "authors": null,
+      "file": "kotlinforforge-5.10.0-all.jar",
+      "curseforge": {
+        "project": 351264,
+        "file": 6994056
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "kubejs",
+      "name": "KubeJS",
+      "version": "2101.7.2-build.348",
+      "description": "Customize your modpack or server with JavaScript!",
+      "authors": "latvian.dev",
+      "file": "kubejs-neoforge-2101.7.2-build.348.jar",
+      "curseforge": {
+        "project": 238086,
+        "file": 7278501
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "kubejstweaks",
+      "name": "KubeJS Tweaks",
+      "version": "1.0.5",
+      "description": "This mod fixes some key KubeJS bugs that may not be fixed yet\nAlso adds some new features/events.",
+      "authors": "Uncandango",
+      "file": "kubejstweaks-1.0.5.jar",
+      "curseforge": {
+        "project": 1306367,
+        "file": 7284880
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "legendarytooltips",
+      "name": "Legendary Tooltips",
+      "version": "1.5.5",
+      "description": "Gives rare items a fancy tooltip and adds additional tooltip configuration options.",
+      "authors": "Grend",
+      "file": "LegendaryTooltips-1.21.1-neoforge-1.5.5.jar",
+      "curseforge": {
+        "project": 532127,
+        "file": 6400660
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "lodestone",
+      "name": "Lodestone",
+      "version": "1.8.2",
+      "description": "A library containing various utilities.",
+      "authors": "Lodestar",
+      "file": "lodestone-1.21.1-1.8.2.jar",
+      "curseforge": {
+        "project": 616457,
+        "file": 7264731
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "lootr",
+      "name": "Lootr",
+      "version": "1.21.1-1.11.36.110",
+      "description": "Generates unique loot for each player that opens a loot container.",
+      "authors": "Noobanidus",
+      "file": "lootr-neoforge-1.21.1-1.11.36.110.jar",
+      "curseforge": {
+        "project": 361276,
+        "file": 7411234
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "luminax",
+      "name": "Luminax",
+      "version": "1.3.1",
+      "description": "Adds simple glowing blocks to the game.",
+      "authors": "Satherov",
+      "file": "luminax-1.3.1_neoforge_1.21.1.jar",
+      "curseforge": {
+        "project": 1165932,
+        "file": 6924618
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "malum",
+      "name": "Malum",
+      "version": "1.8.2",
+      "description": "A dark magic mod focused on soul and spirit magic.",
+      "authors": "Sammy Semicolon",
+      "file": "malum-1.21.1-1.8.2.jar",
+      "curseforge": {
+        "project": 484064,
+        "file": 7307339
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "mcjtylib",
+      "name": "McJtyLib",
+      "version": "${file.jarVersion}",
+      "description": "Base mod for all McJty mods",
+      "authors": null,
+      "file": "mcjtylib-1.21-9.0.20.jar",
+      "curseforge": {
+        "project": 233105,
+        "file": 7299488
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "measurements",
+      "name": "Measurements",
+      "version": "${file.jarVersion}",
+      "description": "Measure the distance between positions :)",
+      "authors": "Mrbysco",
+      "file": "Measurements-neoforge-1.21.1-3.0.3.jar",
+      "curseforge": {
+        "project": 478559,
+        "file": 6956811
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "megacells",
+      "name": "MEGA Cells",
+      "version": "4.10.1",
+      "description": "ME Greater Accumulation Cells - For when kilobytes just won't do.",
+      "authors": null,
+      "file": "megacells-4.10.1.jar",
+      "curseforge": {
+        "project": 622112,
+        "file": 6853076
+      },
+      "guideCount": 27
+    },
+    {
+      "id": "mekanism",
+      "name": "Mekanism",
+      "version": "10.7.17",
+      "description": "Mekanism is a Minecraft add-on featuring high-tech machinery that can be used to create powerful tools, armor, and weapons.",
+      "authors": "Aidancbrady, Thommy101, Thiakil, pupnewfster, dizzyd",
+      "file": "Mekanism-1.21.1-10.7.17.83.jar",
+      "curseforge": {
+        "project": 268560,
+        "file": 7132168
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "mekanismgenerators",
+      "name": "Mekanism: Generators",
+      "version": "10.7.17",
+      "description": "Generators module for Mekanism",
+      "authors": "Aidancbrady, Thommy101, Thiakil, pupnewfster, dizzyd",
+      "file": "MekanismGenerators-1.21.1-10.7.17.83.jar",
+      "curseforge": {
+        "project": 268566,
+        "file": 7132171
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "mekanismtools",
+      "name": "Mekanism: Tools",
+      "version": "10.7.17",
+      "description": "Tools module for Mekanism",
+      "authors": "Aidancbrady, Thommy101, Thiakil, pupnewfster, dizzyd",
+      "file": "MekanismTools-1.21.1-10.7.17.83.jar",
+      "curseforge": {
+        "project": 268567,
+        "file": 7132172
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "mob_grinding_utils",
+      "name": "Mob Grinding Utils",
+      "version": "${file.jarVersion}",
+      "description": "A mod that adds a fun ways to farm mobs",
+      "authors": "vadis365, flanks255",
+      "file": "mob_grinding_utils-1.1.10+mc1.21.1.jar",
+      "curseforge": {
+        "project": 254241,
+        "file": 6804869
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "modernfix",
+      "name": "ModernFix",
+      "version": "5.25.1+mc1.21.1",
+      "description": "Egregious, yet effective performance improvements for modern Minecraft",
+      "authors": "embeddedt",
+      "file": "modernfix-neoforge-5.25.1+mc1.21.1.jar",
+      "curseforge": {
+        "project": 790626,
+        "file": 7200212
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "modonomicon",
+      "name": "Modonomicon",
+      "version": "1.117.2",
+      "description": "Data-driven minecraft in-game documentation with progress visualization.",
+      "authors": "Kli Kli",
+      "file": "modonomicon-1.21.1-neoforge-1.117.2.jar",
+      "curseforge": {
+        "project": 538392,
+        "file": 7086032
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "modularrouters",
+      "name": "Modular Routers",
+      "version": "13.2.3",
+      "description": "Modular Routers is a highly flexible mod for moving items/fluids/energy around the world in various ways.",
+      "authors": null,
+      "file": "modular-routers-13.2.3+mc1.21.1.jar",
+      "curseforge": {
+        "project": 250294,
+        "file": 6840170
+      },
+      "guideCount": 123
+    },
+    {
+      "id": "moredragoneggs",
+      "name": "More Dragon Eggs",
+      "version": "5.0",
+      "description": "This mod makes it so a dragon egg spawns every time the dragon dies.",
+      "authors": "Darkere",
+      "file": "moredragoneggs-5.0.jar",
+      "curseforge": {
+        "project": 358700,
+        "file": 5746086
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "moreoverlays",
+      "name": "More Overlays Updated",
+      "version": "1.24.2",
+      "description": "Adds some of the overlays from the old (MC 1.7.x) NotEnoughItems Mod:\n    * Chunk and Region borders\n    * Mob spawn / Light overlay\n    * Item search when JEI (JustEnoughItems by Mezz) is installed\n\nBuilt for MC 1.21.1 (NeoForge)",
+      "authors": "feldim2425, RiDGo8",
+      "file": "moreoverlays-1.24.2-mc1.21.1-neoforge.jar",
+      "curseforge": {
+        "project": 391382,
+        "file": 6981252
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "mousetweaks",
+      "name": "Mouse Tweaks",
+      "version": "2.26.1",
+      "description": "A mod that enhances the inventory management by adding various additional functions to the usual mouse buttons.",
+      "authors": "Ivan Molodetskikh (YaLTeR)",
+      "file": "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+      "curseforge": {
+        "project": 60089,
+        "file": 5637846
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "naturescompass",
+      "name": "Nature's Compass",
+      "version": "1.21.1-3.0.2-neoforge",
+      "description": "Search for a biome and get information about it.",
+      "authors": "ChaosTheDude",
+      "file": "NaturesCompass-1.21.1-3.0.3-neoforge.jar",
+      "curseforge": {
+        "project": 252848,
+        "file": 5696042
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "neo_auth",
+      "name": "NeoAuth",
+      "version": "${file.jarVersion}",
+      "description": "A Neoforge port of AuthMe",
+      "authors": "Mrbysco, Axieum",
+      "file": "NeoAuth-1.21.1-1.0.1.jar",
+      "curseforge": {
+        "project": 1140741,
+        "file": 7069504
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "netherportalfix",
+      "name": "NetherPortalFix",
+      "version": "21.1.1",
+      "description": "Ensures correct destinations when travelling back and forth through Nether Portals in Multiplayer.",
+      "authors": "BlayTheNinth",
+      "file": "netherportalfix-neoforge-1.21.1-21.1.1.jar",
+      "curseforge": {
+        "project": 241160,
+        "file": 5623547
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "nochatreports",
+      "name": "No Chat Reports",
+      "version": "1.21.1-v2.9.1",
+      "description": "Strips cryptographic signatures from player messages, making it impossible to track and associate them with your Mojang/Microsoft account, as well as use Player Chat Reporting feature.",
+      "authors": "Aizistral",
+      "file": "NoChatReports-NEOFORGE-1.21.1-v2.9.1.jar",
+      "curseforge": {
+        "project": 634062,
+        "file": 5885735
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "observable",
+      "name": "Observable",
+      "version": "5.4.4",
+      "description": "See what's lagging your world.",
+      "authors": null,
+      "file": "observable-5.4.4.jar",
+      "curseforge": {
+        "project": 509575,
+        "file": 6697124
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "occultism",
+      "name": "Occultism",
+      "version": "1.201.0",
+      "description": "A magic mod inspired by the world of Jonathan Stroud's Bartimaeus. With the help of occult rituals players can summon entities from the \"Other Side\" to perform magic.",
+      "authors": "Kli Kli",
+      "file": "occultism-1.21.1-neoforge-1.201.0.jar",
+      "curseforge": {
+        "project": 361026,
+        "file": 7412397
+      },
+      "guideCount": 228
+    },
+    {
+      "id": "octolib",
+      "name": "OctoLib",
+      "version": "0.5.0.1",
+      "description": "Collection of shared code for OctoStudios' mods",
+      "authors": "OctoStudios",
+      "file": "OctoLib-NEOFORGE-0.5.0.1.jar",
+      "curseforge": {
+        "project": 916747,
+        "file": 6011408
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "oreberriesreplanted",
+      "name": "Oreberries Replanted",
+      "version": "${file.jarVersion}",
+      "description": "Are you tired of your ores generating in rock? Do you want to grow your ore? Well, you no longer have to hope! Now you can grow ores in the form of berries",
+      "authors": "Mrbysco, ShyNieke",
+      "file": "OreBerries-Replanted-1.21.1-0.9.7.jar",
+      "curseforge": {
+        "project": 454062,
+        "file": 6123417
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "overloadedarmorbar",
+      "name": "OverloadedArmorBar",
+      "version": "2",
+      "description": "Enhanced armor bar rendering for armor levels above diamond",
+      "authors": "Jared",
+      "file": "overloadedarmorbar-neoforge-1.21-2.jar",
+      "curseforge": {
+        "project": 314002,
+        "file": 5537850
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "packmenu",
+      "name": "PackMenu",
+      "version": "7.0.4",
+      "description": "A data-driven main menu mod!",
+      "authors": "Shadows_of_Fire",
+      "file": "PackMenu-1.21.1-7.0.4.jar",
+      "curseforge": {
+        "project": 358191,
+        "file": 6751519
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "patchouli",
+      "name": "Patchouli",
+      "version": "${file.jarVersion}",
+      "description": "Accessible, Data-Driven, Dependency-Free Documentation for Minecraft Modders and Pack Makers",
+      "authors": "Vazkii",
+      "file": "Patchouli-1.21.1-92-NEOFORGE.jar",
+      "curseforge": {
+        "project": 306770,
+        "file": 6842247
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "placebo",
+      "name": "Placebo",
+      "version": "9.9.1",
+      "description": "1 (one) library boi",
+      "authors": "Shadows_of_Fire",
+      "file": "Placebo-1.21.1-9.9.1.jar",
+      "curseforge": {
+        "project": 283644,
+        "file": 6926281
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "playeranimator",
+      "name": "Player Animator",
+      "version": "2.0.4+1.21.1",
+      "description": "A lightweight library to easily animate the player",
+      "authors": "KosmX",
+      "file": "player-animation-lib-forge-2.0.4+1.21.1.jar",
+      "curseforge": {
+        "project": 658587,
+        "file": 7389814
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "polylib",
+      "name": "PolyLib",
+      "version": "2100.1.0-build.183",
+      "description": "\"PolyLib,\" developed by CreeperHost Ltd.,\nis a compact Minecraft library mod focused on providing a collection of helper classes.\nThese classes are designed to simplify various aspects of mod development, offering tools for easier GUI creation and other development enhancements to improve efficiency and user experience.",
+      "authors": "CreeperHost",
+      "file": "polylib-2100.1.0-build.183-neoforge.jar",
+      "curseforge": {
+        "project": 576589,
+        "file": 7140477
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "polymorph",
+      "name": "Polymorph",
+      "version": "1.1.0+1.21.1",
+      "description": "No more recipe conflicts! Adds an option to choose the crafting result if more than one is available.",
+      "authors": "Illusive Soulworks",
+      "file": "polymorph-neoforge-1.1.0+1.21.1.jar",
+      "curseforge": {
+        "project": 388800,
+        "file": 6794589
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "polyeng",
+      "name": "Polymorphic Energistics",
+      "version": "0.4.1",
+      "description": "Polymorph support for Applied Energistics 2.",
+      "authors": null,
+      "file": "polyeng-0.4.1.jar",
+      "curseforge": {
+        "project": 941096,
+        "file": 5545923
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "potionsmaster",
+      "name": "PotionsMaster",
+      "version": "0.7.1-packdev",
+      "description": "Potions Master",
+      "authors": "thevortex, whatthedrunk",
+      "file": "potionsmaster-21.1.113-0.7.1-packdev.jar",
+      "curseforge": {
+        "project": 356801,
+        "file": 6826199
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "powah",
+      "name": "Powah",
+      "version": "6.2.7",
+      "description": "Various ways to generate, store and transmit FE power.",
+      "authors": "owmii,Technici4n,shartte",
+      "file": "Powah-6.2.7.jar",
+      "curseforge": {
+        "project": 633483,
+        "file": 7269384
+      },
+      "guideCount": 43
+    },
+    {
+      "id": "prickle",
+      "name": "PrickleMC",
+      "version": "21.1.11",
+      "description": "Bringing Prickle, the JSON based configuration file format to Minecraft.",
+      "authors": "Darkhax",
+      "file": "prickle-neoforge-1.21.1-21.1.11.jar",
+      "curseforge": {
+        "project": 1023259,
+        "file": 6961457
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "prism",
+      "name": "Prism",
+      "version": "1.0.11",
+      "description": "A library all about color! Provides lots of color-related functionality for dependent mods.",
+      "authors": "Grend",
+      "file": "Prism-1.21.1-neoforge-1.0.11.jar",
+      "curseforge": {
+        "project": 638111,
+        "file": 6372979
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "pylons",
+      "name": "Pylons",
+      "version": "5.3.0",
+      "description": "Utility Pylons",
+      "authors": null,
+      "file": "pylons-1.21.1-5.3.0.jar",
+      "curseforge": {
+        "project": 518211,
+        "file": 7357603
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "rangedpumps",
+      "name": "Ranged Pumps",
+      "version": "1.3.0",
+      "description": "Ranged Pumps is a simple mod that adds a pump that pumps liquids in a range",
+      "authors": "Refined Mods",
+      "file": "rangedpumps-1.3.0.jar",
+      "curseforge": {
+        "project": 247496,
+        "file": 5508029
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "rarcompat",
+      "name": "RAR-Compat",
+      "version": "0.9.6",
+      "description": "Compat addon between Relics and Artifacts",
+      "authors": "Octo-Studios",
+      "file": "rarcompat-1.21-0.9.6.jar",
+      "curseforge": {
+        "project": 1100379,
+        "file": 6459157
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "rechiseled",
+      "name": "Rechiseled",
+      "version": "1.1.6+a",
+      "description": "Rechiseled allows you to exchange between various decorative blocks!",
+      "authors": "SuperMartijn642",
+      "file": "rechiseled-1.1.6a-neoforge-mc1.21.jar",
+      "curseforge": {
+        "project": 558998,
+        "file": 5663514
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "relics",
+      "name": "Relics",
+      "version": "0.10.7.5",
+      "description": "Just a mod about useful relics with unique mechanics ;)",
+      "authors": "SSKirillSS",
+      "file": "relics-1.21.1-0.10.7.5.jar",
+      "curseforge": {
+        "project": 445274,
+        "file": 6444603
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "repeatable_trial_vaults",
+      "name": "Repeatable Trial Vaults",
+      "version": "1.0.2",
+      "description": "Consume a key to be able to use another trial vault",
+      "authors": "Buuz135",
+      "file": "repeatable_trial_vaults-neoforge-1.21-1.0.2.jar",
+      "curseforge": {
+        "project": 1070541,
+        "file": 5643915
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "repurposed_structures",
+      "name": "Repurposed Structures",
+      "version": "7.5.17+1.21.1-neoforge",
+      "description": "Taking existing vanilla structures and changing them up for extra variety!",
+      "authors": "TelepathicGrunt",
+      "file": "repurposed_structures-7.5.17+1.21.1-neoforge.jar",
+      "curseforge": {
+        "project": 368293,
+        "file": 6797352
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "rftoolsbase",
+      "name": "RFToolsBase",
+      "version": "${file.jarVersion}",
+      "description": "The base class for all RFTools tech mods (and XNet/Deep Resonance)",
+      "authors": null,
+      "file": "rftoolsbase-1.21-6.0.10.jar",
+      "curseforge": {
+        "project": 326041,
+        "file": 7263404
+      },
+      "guideCount": 16
+    },
+    {
+      "id": "rftoolsbuilder",
+      "name": "RFToolsBuilder",
+      "version": "${file.jarVersion}",
+      "description": "Everything related to the builder",
+      "authors": null,
+      "file": "rftoolsbuilder-1.21-7.0.4.jar",
+      "curseforge": {
+        "project": 347706,
+        "file": 7284650
+      },
+      "guideCount": 13
+    },
+    {
+      "id": "rftoolsutility",
+      "name": "RFToolsUtility",
+      "version": "${file.jarVersion}",
+      "description": "Generic RFTools utilities",
+      "authors": null,
+      "file": "rftoolsutility-1.21-7.0.10.jar",
+      "curseforge": {
+        "project": 342466,
+        "file": 7263408
+      },
+      "guideCount": 24
+    },
+    {
+      "id": "rhino",
+      "name": "Rhino",
+      "version": "2101.2.7-build.81",
+      "description": "A fork of Mozilla's Rhino library, modified for use in mods",
+      "authors": "latvian.dev, Mozilla",
+      "file": "rhino-2101.2.7-build.81.jar",
+      "curseforge": {
+        "project": 416294,
+        "file": 7104526
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "searchables",
+      "name": "Searchables",
+      "version": "1.0.2",
+      "description": "A library mod to facilitate adding search bars with auto complete and search types.",
+      "authors": "Jaredlll08",
+      "file": "Searchables-neoforge-1.21.1-1.0.2.jar",
+      "curseforge": {
+        "project": 858542,
+        "file": 5831692
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "servercore",
+      "name": "ServerCore",
+      "version": "1.5.10+1.21.1",
+      "description": "A NeoForge mod that aims to optimize the minecraft server.",
+      "authors": "Wesley1808",
+      "file": "servercore-neoforge-1.5.10+1.21.1.jar",
+      "curseforge": {
+        "project": 550579,
+        "file": 6390848
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "showcaseitem",
+      "name": "Showcase Item",
+      "version": "1.21.1-1.1.0",
+      "description": "This mod allows to showcase items in the chat.",
+      "authors": "Ultramega",
+      "file": "showcaseitem-1.21.1-1.1.0.jar",
+      "curseforge": {
+        "project": 627196,
+        "file": 6426184
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "shrink",
+      "name": "Shrink",
+      "version": "2.0.1.47",
+      "description": "Honey I shrunk the children",
+      "authors": "Gigabit101",
+      "file": "shrink-2.0.1.47-neoforge.jar",
+      "curseforge": {
+        "project": 426386,
+        "file": 6194054
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "simplebackups",
+      "name": "Simple Backups",
+      "version": "1.21-4.0.24",
+      "description": "A simple mod to create scheduled backups.",
+      "authors": "MelanX",
+      "file": "SimpleBackups-1.21-4.0.24.jar",
+      "curseforge": {
+        "project": 583228,
+        "file": 7312684
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "simplemagnets",
+      "name": "Simple Magnets",
+      "version": "1.1.12+c",
+      "description": "Simple Magnets adds Magnets that pickup items around the player!",
+      "authors": "SuperMartijn642",
+      "file": "simplemagnets-1.1.12c-neoforge-mc1.21.jar",
+      "curseforge": {
+        "project": 394140,
+        "file": 6316527
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "simplylight",
+      "name": "Simply Light",
+      "version": "1.5.3",
+      "description": "Simple light, for a complicated world.",
+      "authors": "Flanks255",
+      "file": "simplylight-1.5.3+1.21.1-b4.jar",
+      "curseforge": {
+        "project": 300331,
+        "file": 6219029
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "smartbrainlib",
+      "name": "SmartBrainLib",
+      "version": "1.16.11",
+      "description": "A library mod for smarter Brains and easier usage of the Brain system.",
+      "authors": "Tslat",
+      "file": "SmartBrainLib-neoforge-1.21.1-1.16.11.jar",
+      "curseforge": {
+        "project": 661293,
+        "file": 7055149
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "smithingtemplateviewer",
+      "name": "SmithingTemplateViewer",
+      "version": "1.0.3",
+      "description": "View how your smithing templates will look in your armor",
+      "authors": "Buuz135",
+      "file": "smithingtemplateviewer-1.0.3.jar",
+      "curseforge": {
+        "project": 1133580,
+        "file": 6502654
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "sodium",
+      "name": "Sodium",
+      "version": "0.6.13+mc1.21.1",
+      "description": "Sodium is a powerful rendering engine for Minecraft which improves frame rates and reduces lag spikes.",
+      "authors": "JellySquid (jellysquid3), IMS212",
+      "file": "sodium-neoforge-0.6.13+mc1.21.1.jar",
+      "curseforge": {
+        "project": 394468,
+        "file": 6382651
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "sophisticatedbackpacks",
+      "name": "Sophisticated Backpacks",
+      "version": "3.25.22",
+      "description": "Fancy and functional backpacks.",
+      "authors": "P3pp3rF1y, Ridanisaurus",
+      "file": "sophisticatedbackpacks-1.21.1-3.25.22.1487.jar",
+      "curseforge": {
+        "project": 422301,
+        "file": 7414211
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "sophisticatedcore",
+      "name": "Sophisticated Core",
+      "version": "1.3.100",
+      "description": "A library / shared functionality mod for Sophisticated Storage and Backpacks",
+      "authors": "P3pp3rF1y",
+      "file": "sophisticatedcore-1.21.1-1.3.100.1348.jar",
+      "curseforge": {
+        "project": 618298,
+        "file": 7402059
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "sophisticatedstorage",
+      "name": "Sophisticated Storage",
+      "version": "1.5.19",
+      "description": "Fancy and functional storage containers.",
+      "authors": "P3pp3rF1y, Ridanisaurus",
+      "file": "sophisticatedstorage-1.21.1-1.5.19.1415.jar",
+      "curseforge": {
+        "project": 619320,
+        "file": 7416157
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "sophisticatedstorageinmotion",
+      "name": "Sophisticated Storage In Motion",
+      "version": "0.10.24",
+      "description": "Sophisticated Storage on moving entities.",
+      "authors": "P3pp3rF1y",
+      "file": "sophisticatedstorageinmotion-1.21.1-0.10.24.155.jar",
+      "curseforge": {
+        "project": 1166930,
+        "file": 7077064
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "spark",
+      "name": "spark",
+      "version": "1.10.124",
+      "description": "spark is a performance profiling plugin/mod for Minecraft clients, servers and proxies.",
+      "authors": null,
+      "file": "spark-1.10.124-neoforge.jar",
+      "curseforge": {
+        "project": 361579,
+        "file": 6225208
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "solcarrot",
+      "name": "Spice of Life: Carrot Edition",
+      "version": "1.16.6",
+      "description": "A mod designed to encourage dietary variety!\n\nIt does so by rewarding the player for eating a variety of foods instead of punishing them for failing to diversify.\nInstead of using the stick, we use the carrot!",
+      "authors": null,
+      "file": "solcarrot-1.21.1-1.16.6.jar",
+      "curseforge": {
+        "project": 277616,
+        "file": 7374098
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "supermartijn642configlib",
+      "name": "SuperMartijn642's Config Library",
+      "version": "1.1.8",
+      "description": "Config Lib makes dealing with config files just a bit easier.",
+      "authors": "SuperMartijn642",
+      "file": "supermartijn642configlib-1.1.8-neoforge-mc1.21.jar",
+      "curseforge": {
+        "project": 438332,
+        "file": 5546996
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "supermartijn642corelib",
+      "name": "SuperMartijn642's Core Lib",
+      "version": "1.1.18+b",
+      "description": "SuperMartijn642's Core Lib adds lots of basic implementations for guis that allow for similar code between Minecraft 1.12, 1.14, 1.15, and 1.16!",
+      "authors": "SuperMartijn642",
+      "file": "supermartijn642corelib-1.1.18b-neoforge-mc1.21.jar",
+      "curseforge": {
+        "project": 454372,
+        "file": 7351139
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "titanium",
+      "name": "Titanium",
+      "version": "${file.jarVersion}",
+      "description": "A Lib",
+      "authors": null,
+      "file": "titanium-1.21-4.0.40.jar",
+      "curseforge": {
+        "project": 287342,
+        "file": 6875285
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "toastcontrol",
+      "name": "Toast Control",
+      "version": "9.0.1",
+      "description": "Blocking annoying popups since 1.12",
+      "authors": "Shadows_of_Fire",
+      "file": "ToastControl-1.21.1-9.0.1.jar",
+      "curseforge": {
+        "project": 271740,
+        "file": 6751464
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "toolbelt",
+      "name": "Tool Belt",
+      "version": "${file.jarVersion}",
+      "description": "Declutter your inventory of tools",
+      "authors": "gigaherz",
+      "file": "ToolBelt-1.21.1-2.2.7.jar",
+      "curseforge": {
+        "project": 260262,
+        "file": 7166902
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "torchmaster",
+      "name": "Torchmaster",
+      "version": "21.1.9",
+      "description": "Special lamp and torch which prevents mob spawning.",
+      "authors": "Xalcon",
+      "file": "torchmaster-neoforge-1.21.1-21.1.9.jar",
+      "curseforge": {
+        "project": 254268,
+        "file": 7197218
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "trashcans",
+      "name": "Trash Cans",
+      "version": "1.0.18+c",
+      "description": "Trash Cans adds Trash Cans which can be used to void items, liquids and energy!",
+      "authors": "SuperMartijn642",
+      "file": "trashcans-1.0.18c-neoforge-mc1.21.jar",
+      "curseforge": {
+        "project": 394535,
+        "file": 5891067
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "utilitarian",
+      "name": "Utilitarian",
+      "version": "1.21.1-0.17.1",
+      "description": "Various features and changes to the base game.",
+      "authors": "LobsterJonn",
+      "file": "utilitarian-1.21.1-0.17.1.jar",
+      "curseforge": {
+        "project": 929559,
+        "file": 7301779
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "waystones",
+      "name": "Waystones",
+      "version": "21.1.25",
+      "description": "Teleport back to activated waystones. For Survival, Adventure or Servers.",
+      "authors": "BlayTheNinth",
+      "file": "waystones-neoforge-1.21.1-21.1.25.jar",
+      "curseforge": {
+        "project": 245755,
+        "file": 7354464
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "wstweaks",
+      "name": "Wither Skeleton Tweaks",
+      "version": "10.1.1",
+      "description": "Turns all Skeletons in the Nether into Wither Skeletons, and adds Skull Fragments.",
+      "authors": "Shadows_of_Fire",
+      "file": "WitherSkeletonTweaks-1.21.1-10.1.1.jar",
+      "curseforge": {
+        "project": 255902,
+        "file": 6751432
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "wits",
+      "name": "WITS",
+      "version": "1.3.0+1.21-neoforge",
+      "description": "Use `\\wits` command to get registry name of all structures where you are standing.",
+      "authors": "TelepathicGrunt",
+      "file": "wits-1.3.0+1.21-neoforge.jar",
+      "curseforge": {
+        "project": 909375,
+        "file": 5426237
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "xycraft_core",
+      "name": "XyCraft Core",
+      "version": "0.7.53",
+      "description": "Foundational component to XyCraft. Provides a majority of the backend as well as a Texture loader for Connected Textures for others to use.",
+      "authors": "Soaryn",
+      "file": "xycraft_core-0.7.53-all.jar",
+      "curseforge": {
+        "project": 653786,
+        "file": 6872525
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "xycraft_machines",
+      "name": "XyCraft Machines",
+      "version": "0.7.53",
+      "description": "Provides an assortment of machines, utilities and a unique power-net that was started over a decade ago. Do you like building tanks out of random blocks? Perhaps you enjoy lasers? Or even having a modular set of armor? Then XyCraft Machines may be for you!",
+      "authors": "Soaryn",
+      "file": "xycraft_machines-0.7.53.jar",
+      "curseforge": {
+        "project": 653791,
+        "file": 6872530
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "xycraft_world",
+      "name": "XyCraft World",
+      "version": "0.7.53",
+      "description": "World generation and aesthetic blocks for XyCraft",
+      "authors": "Soaryn",
+      "file": "xycraft_world-0.7.53.jar",
+      "curseforge": {
+        "project": 653789,
+        "file": 6872532
+      },
+      "guideCount": 0
+    },
+    {
+      "id": "yeetusexperimentus",
+      "name": "Yeetus Experimentus",
+      "version": "87.0.0",
+      "description": "Disables the Experimental Settings popup, which appears when you create or load world.",
+      "authors": "Sunekaer",
+      "file": "yeetusexperimentus-neoforge-87.0.0.jar",
+      "curseforge": {
+        "project": 635427,
+        "file": 5444189
+      },
+      "guideCount": 0
+    }
+  ],
+  "books": [
+    {
+      "id": "modonomicon-occultism-dictionary-of-spirits",
+      "engine": "modonomicon",
+      "engineLabel": "Modonomicon",
+      "namespace": "occultism",
+      "name": "Dictionary of Spirits",
+      "subtitle": "An introduction to the spirit world.",
+      "summary": null,
+      "modIds": [
+        "occultism"
+      ],
+      "modNames": [
+        "Occultism"
+      ],
+      "contributors": [
+        {
+          "id": "occultism",
+          "name": "Occultism",
+          "entries": 218
+        }
+      ],
+      "entryCount": 218,
+      "pageCount": 731,
+      "categories": [
+        {
+          "id": "getting_started",
+          "name": "Getting Started",
+          "entryCount": 33
+        },
+        {
+          "id": "spirits",
+          "name": "Spirits",
+          "entryCount": 6
+        },
+        {
+          "id": "rituals",
+          "name": "Rituals",
+          "entryCount": 7
+        },
+        {
+          "id": "pentacles",
+          "name": "Pentacles",
+          "entryCount": 37
+        },
+        {
+          "id": "summoning_rituals",
+          "name": "Summoning Rituals",
+          "entryCount": 26
+        },
+        {
+          "id": "possession_rituals",
+          "name": "Possession Rituals",
+          "entryCount": 31
+        },
+        {
+          "id": "familiar_rituals",
+          "name": "Familiar Rituals",
+          "entryCount": 23
+        },
+        {
+          "id": "crafting_rituals",
+          "name": "Binding Rituals",
+          "entryCount": 43
+        },
+        {
+          "id": "storage",
+          "name": "Magic Storage",
+          "entryCount": 12
+        }
+      ]
+    },
+    {
+      "id": "guideme-ae2-ae2guide",
+      "engine": "guideme",
+      "engineLabel": "GuideME",
+      "namespace": "ae2",
+      "name": "Applied Energistics 2 Guide",
+      "subtitle": null,
+      "summary": "Logo\nWhat is Applied Energistics 2?\nHow To Use This Guide\nAccess the sidebar on the left to find a table of contents\nMany pages have interactive scenes. If a scene has Plus\nand Minus (zoom) buttons next to it, you can rotate and move the camera.\nLeft click and drag to rotate, right click and drag to translate.\nWhat is Applied Energistics 2?\nApplied Energistics 2 adds components and mechanics to pr",
+      "modIds": [
+        "ae2wtlib",
+        "megacells",
+        "extendedae",
+        "appflux",
+        "ae2",
+        "advanced_ae"
+      ],
+      "modNames": [
+        "AE2WTLib",
+        "Advanced AE",
+        "Applied Energistics 2",
+        "AppliedFlux",
+        "ExtendedAE",
+        "MEGA Cells"
+      ],
+      "contributors": [
+        {
+          "id": "ae2",
+          "name": "Applied Energistics 2",
+          "entries": 124
+        },
+        {
+          "id": "extendedae",
+          "name": "ExtendedAE",
+          "entries": 46
+        },
+        {
+          "id": "advanced_ae",
+          "name": "Advanced AE",
+          "entries": 13
+        },
+        {
+          "id": "appflux",
+          "name": "AppliedFlux",
+          "entries": 12
+        },
+        {
+          "id": "ae2wtlib",
+          "name": "AE2WTLib",
+          "entries": 7
+        },
+        {
+          "id": "megacells",
+          "name": "MEGA Cells",
+          "entries": 6
+        }
+      ],
+      "entryCount": 208,
+      "pageCount": 208,
+      "categories": [
+        {
+          "id": "ae2-mechanics/ae2-mechanics-index.md",
+          "name": "AE2 Mechanics",
+          "entryCount": 15
+        },
+        {
+          "id": "example-setups/example-setups-index.md",
+          "name": "Example Setups",
+          "entryCount": 21
+        },
+        {
+          "id": "items-blocks-machines/items-blocks-machines-index.md",
+          "name": "Items, Blocks, and Machines",
+          "entryCount": 86
+        },
+        {
+          "id": "ae2wtlib/ae2wtlib-index.md",
+          "name": "AE2WTLib",
+          "entryCount": 7
+        },
+        {
+          "id": "epp_intro/epp_intro-index.md",
+          "name": "Extended AE Introduction",
+          "entryCount": 46
+        },
+        {
+          "id": "aae_intro/aae_intro-index.md",
+          "name": "Advanced AE Introduction",
+          "entryCount": 13
+        },
+        {
+          "id": "appflux/appflux-index.md",
+          "name": "Applied Flux",
+          "entryCount": 12
+        },
+        {
+          "id": "__pages",
+          "name": "Pages",
+          "entryCount": 8
+        }
+      ]
+    },
+    {
+      "id": "patchouli-croptopia-guide",
+      "engine": "patchouli",
+      "engineLabel": "Patchouli",
+      "namespace": "croptopia",
+      "name": "Croptopia",
+      "subtitle": null,
+      "summary": "Recipes & more.",
+      "modIds": [
+        "croptopia"
+      ],
+      "modNames": [
+        "Croptopia"
+      ],
+      "contributors": [
+        {
+          "id": "croptopia",
+          "name": "Croptopia",
+          "entries": 165
+        }
+      ],
+      "entryCount": 165,
+      "pageCount": 173,
+      "categories": [
+        {
+          "id": "croptopia:crops",
+          "name": "Crops",
+          "entryCount": 2
+        },
+        {
+          "id": "croptopia:utensils",
+          "name": "Utensils",
+          "entryCount": 5
+        },
+        {
+          "id": "croptopia:desserts",
+          "name": "Desserts",
+          "entryCount": 25
+        },
+        {
+          "id": "croptopia:drinks",
+          "name": "Drinks",
+          "entryCount": 24
+        },
+        {
+          "id": "croptopia:ingredients",
+          "name": "Ingredients",
+          "entryCount": 25
+        },
+        {
+          "id": "croptopia:meals",
+          "name": "Meals",
+          "entryCount": 57
+        },
+        {
+          "id": "croptopia:snacks",
+          "name": "Snacks",
+          "entryCount": 27
+        }
+      ]
+    },
+    {
+      "id": "patchouli-apotheosis-apoth-chronicle",
+      "engine": "patchouli",
+      "engineLabel": "Patchouli",
+      "namespace": "apotheosis",
+      "name": "Chronicle of Shadows",
+      "subtitle": "Guide to Apotheosis",
+      "summary": "Welcome to the world of Apotheosis.\nApotheosis is organized into Modules, and so is the content of this book.\nDisabled modules are hidden.",
+      "modIds": [
+        "apotheosis"
+      ],
+      "modNames": [
+        "Apotheosis"
+      ],
+      "contributors": [
+        {
+          "id": "apotheosis",
+          "name": "Apotheosis",
+          "entries": 106
+        }
+      ],
+      "entryCount": 106,
+      "pageCount": 277,
+      "categories": [
+        {
+          "id": "apotheosis:enchanting/table",
+          "name": "The Enchanting Table",
+          "entryCount": 6
+        },
+        {
+          "id": "apotheosis:enchanting/progression",
+          "name": "Level Progression",
+          "entryCount": 4
+        },
+        {
+          "id": "apotheosis:adventure/affix_loot",
+          "name": "Affix Loot",
+          "entryCount": 5
+        },
+        {
+          "id": "apotheosis:adventure/mobs",
+          "name": "Apothic Mobs",
+          "entryCount": 4
+        },
+        {
+          "id": "apotheosis:adventure/attributes",
+          "name": "Attributes",
+          "entryCount": 27
+        },
+        {
+          "id": "apotheosis:adventure/gems",
+          "name": "Gems & Sockets",
+          "entryCount": 3
+        },
+        {
+          "id": "apotheosis:potion/effects",
+          "name": "New Effects",
+          "entryCount": 5
+        },
+        {
+          "id": "apotheosis:enchanting/enchantments",
+          "name": "New Enchantments",
+          "entryCount": 21
+        },
+        {
+          "id": "apotheosis:potion/recipes",
+          "name": "Potion Recipes",
+          "entryCount": 6
+        },
+        {
+          "id": "apotheosis:adventure/rogue_spawners",
+          "name": "Rogue Spawners",
+          "entryCount": 2
+        },
+        {
+          "id": "apotheosis:spawner/spawner",
+          "name": "Spawner Module",
+          "entryCount": 4
+        },
+        {
+          "id": "apotheosis:enchanting/utility",
+          "name": "Utility Items",
+          "entryCount": 6
+        },
+        {
+          "id": "apotheosis:enchanting/changes",
+          "name": "Vanilla Changes",
+          "entryCount": 6
+        },
+        {
+          "id": "apotheosis:village/village",
+          "name": "Village Module",
+          "entryCount": 1
+        },
+        {
+          "id": "apotheosis:adventure/world_tiers",
+          "name": "World Tiers",
+          "entryCount": 3
+        },
+        {
+          "id": "apotheosis:potion/charms",
+          "name": "Potion Charms",
+          "entryCount": 3
+        }
+      ]
+    },
+    {
+      "id": "patchouli-industrialforegoing-industrial-foregoing",
+      "engine": "patchouli",
+      "engineLabel": "Patchouli",
+      "namespace": "industrialforegoing",
+      "name": "Industrial Foregoing's Manual",
+      "subtitle": null,
+      "summary": "If you need to automate all the things! \nYou can become my patreon here.",
+      "modIds": [
+        "industrialforegoing"
+      ],
+      "modNames": [
+        "Industrial Foregoing"
+      ],
+      "contributors": [
+        {
+          "id": "industrialforegoing",
+          "name": "Industrial Foregoing",
+          "entries": 73
+        }
+      ],
+      "entryCount": 73,
+      "pageCount": 150,
+      "categories": [
+        {
+          "id": "industrialforegoing:basics",
+          "name": "Basics",
+          "entryCount": 6
+        },
+        {
+          "id": "industrialforegoing:agriculture_husbandry",
+          "name": "Agriculture and Husbrandry",
+          "entryCount": 20
+        },
+        {
+          "id": "industrialforegoing:generators",
+          "name": "Generators",
+          "entryCount": 5
+        },
+        {
+          "id": "industrialforegoing:tools",
+          "name": "Tools",
+          "entryCount": 10
+        },
+        {
+          "id": "industrialforegoing:transport",
+          "name": "Transport",
+          "entryCount": 5
+        },
+        {
+          "id": "industrialforegoing:resource_production",
+          "name": "Resource Production",
+          "entryCount": 20
+        },
+        {
+          "id": "industrialforegoing:misc",
+          "name": "Misc",
+          "entryCount": 7
+        }
+      ]
+    },
+    {
+      "id": "patchouli-modularrouters-book",
+      "engine": "patchouli",
+      "engineLabel": "Patchouli",
+      "namespace": "modularrouters",
+      "name": "Modular Routers Manual",
+      "subtitle": null,
+      "summary": "This manual is a complete reference guide to Modular Routers/$.",
+      "modIds": [
+        "modularrouters"
+      ],
+      "modNames": [
+        "Modular Routers"
+      ],
+      "contributors": [
+        {
+          "id": "modularrouters",
+          "name": "Modular Routers",
+          "entries": 55
+        }
+      ],
+      "entryCount": 55,
+      "pageCount": 182,
+      "categories": [
+        {
+          "id": "modularrouters:intro",
+          "name": "Introduction",
+          "entryCount": 7
+        },
+        {
+          "id": "modularrouters:router",
+          "name": "Modular Router",
+          "entryCount": 2
+        },
+        {
+          "id": "modularrouters:modules",
+          "name": "Modules",
+          "entryCount": 22
+        },
+        {
+          "id": "modularrouters:upgrades",
+          "name": "Upgrades",
+          "entryCount": 9
+        },
+        {
+          "id": "modularrouters:augments",
+          "name": "Augments",
+          "entryCount": 10
+        },
+        {
+          "id": "modularrouters:filters",
+          "name": "Smart Filters",
+          "entryCount": 5
+        }
+      ]
+    },
+    {
+      "id": "patchouli-rftoolsbase-manual",
+      "engine": "patchouli",
+      "engineLabel": "Patchouli",
+      "namespace": "rftoolsbase",
+      "name": "Technology Guide",
+      "subtitle": null,
+      "summary": "This manual is your guide to all things McJty, from the RFTools Suite to xNet, Deep Resonance, and (probably) beyond!  If you find a bug, please report it here.",
+      "modIds": [
+        "rftoolsbase",
+        "rftoolsutility",
+        "rftoolsbuilder"
+      ],
+      "modNames": [
+        "RFToolsBase",
+        "RFToolsBuilder",
+        "RFToolsUtility"
+      ],
+      "contributors": [
+        {
+          "id": "rftoolsutility",
+          "name": "RFToolsUtility",
+          "entries": 21
+        },
+        {
+          "id": "rftoolsbase",
+          "name": "RFToolsBase",
+          "entries": 11
+        },
+        {
+          "id": "rftoolsbuilder",
+          "name": "RFToolsBuilder",
+          "entries": 9
+        }
+      ],
+      "entryCount": 41,
+      "pageCount": 111,
+      "categories": [
+        {
+          "id": "rftoolsbase:category_basics",
+          "name": "Basics",
+          "entryCount": 5
+        },
+        {
+          "id": "rftoolsbase:category_rftoolsbuilder_shape_cards",
+          "name": "Shape Cards",
+          "entryCount": 5
+        },
+        {
+          "id": "rftoolsbase:category_rftoolsbuilder_builder",
+          "name": "Builder",
+          "entryCount": 2
+        },
+        {
+          "id": "rftoolsbase:category_tools",
+          "name": "Tools",
+          "entryCount": 4
+        },
+        {
+          "id": "rftoolsbase:category_rftoolsutility_logic",
+          "name": "Logic Blocks",
+          "entryCount": 12
+        },
+        {
+          "id": "rftoolsbase:category_machines",
+          "name": "Machines",
+          "entryCount": 2
+        },
+        {
+          "id": "rftoolsbase:category_rftoolsutility_machines",
+          "name": "Machines",
+          "entryCount": 9
+        },
+        {
+          "id": "rftoolsbase:category_rftoolsbuilder_shield",
+          "name": "Shield Projector",
+          "entryCount": 2
+        }
+      ]
+    },
+    {
+      "id": "guideme-powah-book",
+      "engine": "guideme",
+      "engineLabel": "GuideME",
+      "namespace": "powah",
+      "name": "Powah Guide",
+      "subtitle": null,
+      "summary": "Generators\nStorage / Transfer\nFunctional Blocks\nItems\nMaterials",
+      "modIds": [
+        "powah"
+      ],
+      "modNames": [
+        "Powah"
+      ],
+      "contributors": [
+        {
+          "id": "powah",
+          "name": "Powah",
+          "entries": 27
+        }
+      ],
+      "entryCount": 27,
+      "pageCount": 27,
+      "categories": [
+        {
+          "id": "generators/index.md",
+          "name": "Generators",
+          "entryCount": 6
+        },
+        {
+          "id": "storage_transfer/index.md",
+          "name": "Storage / Transfer",
+          "entryCount": 5
+        },
+        {
+          "id": "energy_blocks/index.md",
+          "name": "Functional Blocks",
+          "entryCount": 5
+        },
+        {
+          "id": "items/index.md",
+          "name": "Items",
+          "entryCount": 8
+        },
+        {
+          "id": "materials/index.md",
+          "name": "Materials",
+          "entryCount": 3
+        }
+      ]
+    },
+    {
+      "id": "ftbquests-atm-quests",
+      "engine": "ftbquests",
+      "engineLabel": "FTB Quests",
+      "namespace": "ftbquests",
+      "name": "Quest Book",
+      "subtitle": "The pack’s own guided progression, chapter by chapter",
+      "summary": "The quest book is the modpack’s hand-written guide. Each chapter below lists its quests in book order, with the tasks you must complete and the rewards you get.",
+      "modIds": [
+        "ftbquests"
+      ],
+      "modNames": [
+        "FTB Quests"
+      ],
+      "contributors": [
+        {
+          "id": "ftbquests",
+          "name": "FTB Quests",
+          "entries": 26
+        }
+      ],
+      "entryCount": 26,
+      "pageCount": 1196,
+      "categories": [
+        {
+          "id": "2084F3F6FB861C5B",
+          "name": "Main Questline",
+          "entryCount": 2
+        },
+        {
+          "id": "15E5B587D291A4AA",
+          "name": "Tools and Gear",
+          "entryCount": 4
+        },
+        {
+          "id": "1AC60211DE7427FC",
+          "name": "Storage & Logistics",
+          "entryCount": 4
+        },
+        {
+          "id": "6614EE2378B8AFB9",
+          "name": "Resources",
+          "entryCount": 3
+        },
+        {
+          "id": "2B51AC12041E3F89",
+          "name": "Tech",
+          "entryCount": 7
+        },
+        {
+          "id": "02FE661031A105D8",
+          "name": "Magic",
+          "entryCount": 3
+        },
+        {
+          "id": "__ungrouped",
+          "name": "Other",
+          "entryCount": 3
+        }
+      ]
+    },
+    {
+      "id": "patchouli-allthemodium-allthemodium-book",
+      "engine": "patchouli",
+      "engineLabel": "Patchouli",
+      "namespace": "allthemodium",
+      "name": "Allthemodium Guide",
+      "subtitle": null,
+      "summary": "This Book wil give you information about the Allthemodium Mod, and the ATM Mod Packs",
+      "modIds": [
+        "allthemodium"
+      ],
+      "modNames": [
+        "Allthemodium"
+      ],
+      "contributors": [
+        {
+          "id": "allthemodium",
+          "name": "Allthemodium",
+          "entries": 13
+        }
+      ],
+      "entryCount": 13,
+      "pageCount": 20,
+      "categories": [
+        {
+          "id": "allthemodium:links",
+          "name": "Links",
+          "entryCount": 3
+        },
+        {
+          "id": "allthemodium:ore",
+          "name": "Ores",
+          "entryCount": 3
+        },
+        {
+          "id": "allthemodium:dimensions",
+          "name": "Dimensions",
+          "entryCount": 3
+        },
+        {
+          "id": "allthemodium:armour",
+          "name": "Armour",
+          "entryCount": 1
+        },
+        {
+          "id": "allthemodium:food",
+          "name": "Food Items",
+          "entryCount": 2
+        },
+        {
+          "id": "allthemodium:misc",
+          "name": "Miscellaneous",
+          "entryCount": 1
+        }
+      ]
+    },
+    {
+      "id": "patchouli-irons-spellbooks-iss-guide-book",
+      "engine": "patchouli",
+      "engineLabel": "Patchouli",
+      "namespace": "irons_spellbooks",
+      "name": "Iron's Guidebook",
+      "subtitle": null,
+      "summary": "Iron's Spells 'n Spellbooks is an RPG-inspired spellcasting mod. You can fight dangerous wizards, raid structures, delve through dungeons, collect resources, and find powerful magical items. External wiki here",
+      "modIds": [
+        "irons_spellbooks"
+      ],
+      "modNames": [
+        "Iron's Spells 'n Spellbooks"
+      ],
+      "contributors": [
+        {
+          "id": "irons_spellbooks",
+          "name": "Iron's Spells 'n Spellbooks",
+          "entries": 9
+        }
+      ],
+      "entryCount": 9,
+      "pageCount": 59,
+      "categories": [
+        {
+          "id": "irons_spellbooks:root",
+          "name": "Progression",
+          "entryCount": 9
+        }
+      ]
+    },
+    {
+      "id": "patchouli-extendedcrafting-guide",
+      "engine": "patchouli",
+      "engineLabel": "Patchouli",
+      "namespace": "extendedcrafting",
+      "name": "Extended Crafting",
+      "subtitle": null,
+      "summary": "Extended Crafting adds new ways to craft items, as well as extra crafting items and utilities. \nThis guide book is for explaining the functionality of the different crafting methods in this mod. How they are implemented is decided by the modpack creator.",
+      "modIds": [
+        "extendedcrafting"
+      ],
+      "modNames": [
+        "Extended Crafting"
+      ],
+      "contributors": [
+        {
+          "id": "extendedcrafting",
+          "name": "Extended Crafting",
+          "entries": 9
+        }
+      ],
+      "entryCount": 9,
+      "pageCount": 16,
+      "categories": [
+        {
+          "id": "extendedcrafting:crafting",
+          "name": "Crafting Methods",
+          "entryCount": 6
+        },
+        {
+          "id": "extendedcrafting:components",
+          "name": "Crafting Components",
+          "entryCount": 2
+        },
+        {
+          "id": "extendedcrafting:utilities",
+          "name": "Crafting Utilities",
+          "entryCount": 1
+        }
+      ]
+    }
+  ]
+}
