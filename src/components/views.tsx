@@ -52,8 +52,10 @@ export function HomeView({ index }: { index: Index }) {
                 <h3 className="font-semibold">{book.name}</h3>
                 <EngineBadge engine={book.engine} label={book.engineLabel} />
               </div>
-              {book.subtitle && (
-                <p className="mt-1 text-sm text-ink-500 dark:text-ink-400">{book.subtitle}</p>
+              {(book.title !== book.name || book.subtitle) && (
+                <p className="mt-1 text-sm text-ink-500 dark:text-ink-400">
+                  {[book.title !== book.name && book.title, book.subtitle].filter(Boolean).join(' · ')}
+                </p>
               )}
               <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-ink-600 dark:text-ink-300">
                 {book.summary}
@@ -167,12 +169,16 @@ export function BookView({ book }: { book: Book }) {
     <div className="mx-auto max-w-3xl px-6 py-10">
       <div className="flex flex-wrap items-center gap-3">
         <EngineBadge engine={book.engine} label={book.engineLabel} />
-        <span className="text-xs text-ink-400">
-          {book.modNames.join(', ')}
-        </span>
+        {book.modNames.length > 1 && (
+          <span className="text-xs text-ink-400">{book.modNames.join(', ')}</span>
+        )}
       </div>
       <h1 className="mt-3 text-3xl font-semibold tracking-tight">{book.name}</h1>
-      {book.subtitle && <p className="mt-2 text-lg text-ink-500 dark:text-ink-400">{book.subtitle}</p>}
+      {(book.title !== book.name || book.subtitle) && (
+        <p className="mt-2 text-lg text-ink-500 dark:text-ink-400">
+          {[book.title !== book.name && book.title, book.subtitle].filter(Boolean).join(' · ')}
+        </p>
+      )}
 
       {book.landing.length > 0 && (
         <div className="mt-6 font-book text-[1.05rem] leading-relaxed">

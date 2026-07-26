@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-25T21:32:01.480Z",
+  "generatedAt": "2026-07-26T10:19:08.930Z",
   "generator": "tools/generate.mjs",
   "pack": {
     "id": 1298400,
@@ -2696,7 +2696,8 @@
       "engine": "modonomicon",
       "engineLabel": "Modonomicon",
       "namespace": "occultism",
-      "name": "Dictionary of Spirits",
+      "name": "Occultism",
+      "title": "Dictionary of Spirits",
       "subtitle": "An introduction to the spirit world.",
       "summary": null,
       "modIds": [
@@ -2767,7 +2768,8 @@
       "engine": "guideme",
       "engineLabel": "GuideME",
       "namespace": "ae2",
-      "name": "Applied Energistics 2 Guide",
+      "name": "Applied Energistics 2",
+      "title": "Applied Energistics 2 Guide",
       "subtitle": null,
       "summary": "Logo\nWhat is Applied Energistics 2?\nHow To Use This Guide\nAccess the sidebar on the left to find a table of contents\nMany pages have interactive scenes. If a scene has Plus\nand Minus (zoom) buttons next to it, you can rotate and move the camera.\nLeft click and drag to rotate, right click and drag to translate.\nWhat is Applied Energistics 2?\nApplied Energistics 2 adds components and mechanics to pr",
       "modIds": [
@@ -2869,6 +2871,7 @@
       "engineLabel": "Patchouli",
       "namespace": "croptopia",
       "name": "Croptopia",
+      "title": "Croptopia",
       "subtitle": null,
       "summary": "Recipes & more.",
       "modIds": [
@@ -2929,7 +2932,8 @@
       "engine": "patchouli",
       "engineLabel": "Patchouli",
       "namespace": "apotheosis",
-      "name": "Chronicle of Shadows",
+      "name": "Apotheosis",
+      "title": "Chronicle of Shadows",
       "subtitle": "Guide to Apotheosis",
       "summary": "Welcome to the world of Apotheosis.\nApotheosis is organized into Modules, and so is the content of this book.\nDisabled modules are hidden.",
       "modIds": [
@@ -3035,7 +3039,8 @@
       "engine": "patchouli",
       "engineLabel": "Patchouli",
       "namespace": "industrialforegoing",
-      "name": "Industrial Foregoing's Manual",
+      "name": "Industrial Foregoing",
+      "title": "Industrial Foregoing's Manual",
       "subtitle": null,
       "summary": "If you need to automate all the things! \nYou can become my patreon here.",
       "modIds": [
@@ -3096,7 +3101,8 @@
       "engine": "patchouli",
       "engineLabel": "Patchouli",
       "namespace": "modularrouters",
-      "name": "Modular Routers Manual",
+      "name": "Modular Routers",
+      "title": "Modular Routers Manual",
       "subtitle": null,
       "summary": "This manual is a complete reference guide to Modular Routers/$.",
       "modIds": [
@@ -3152,7 +3158,8 @@
       "engine": "patchouli",
       "engineLabel": "Patchouli",
       "namespace": "rftoolsbase",
-      "name": "Technology Guide",
+      "name": "RFToolsBase",
+      "title": "Technology Guide",
       "subtitle": null,
       "summary": "This manual is your guide to all things McJty, from the RFTools Suite to xNet, Deep Resonance, and (probably) beyond!  If you find a bug, please report it here.",
       "modIds": [
@@ -3232,7 +3239,8 @@
       "engine": "guideme",
       "engineLabel": "GuideME",
       "namespace": "powah",
-      "name": "Powah Guide",
+      "name": "Powah",
+      "title": "Powah Guide",
       "subtitle": null,
       "summary": "Generators\nStorage / Transfer\nFunctional Blocks\nItems\nMaterials",
       "modIds": [
@@ -3283,7 +3291,8 @@
       "engine": "ftbquests",
       "engineLabel": "FTB Quests",
       "namespace": "ftbquests",
-      "name": "Quest Book",
+      "name": "FTB Quests",
+      "title": "Quest Book",
       "subtitle": "The pack’s own guided progression, chapter by chapter",
       "summary": "The quest book is the modpack’s hand-written guide. Each chapter below lists its quests in book order, with the tasks you must complete and the rewards you get.",
       "modIds": [
@@ -3344,7 +3353,8 @@
       "engine": "patchouli",
       "engineLabel": "Patchouli",
       "namespace": "allthemodium",
-      "name": "Allthemodium Guide",
+      "name": "Allthemodium",
+      "title": "Allthemodium Guide",
       "subtitle": null,
       "summary": "This Book wil give you information about the Allthemodium Mod, and the ATM Mod Packs",
       "modIds": [
@@ -3400,7 +3410,8 @@
       "engine": "patchouli",
       "engineLabel": "Patchouli",
       "namespace": "irons_spellbooks",
-      "name": "Iron's Guidebook",
+      "name": "Iron's Spells 'n Spellbooks",
+      "title": "Iron's Guidebook",
       "subtitle": null,
       "summary": "Iron's Spells 'n Spellbooks is an RPG-inspired spellcasting mod. You can fight dangerous wizards, raid structures, delve through dungeons, collect resources, and find powerful magical items. External wiki here",
       "modIds": [
@@ -3432,6 +3443,7 @@
       "engineLabel": "Patchouli",
       "namespace": "extendedcrafting",
       "name": "Extended Crafting",
+      "title": "Extended Crafting",
       "subtitle": null,
       "summary": "Extended Crafting adds new ways to craft items, as well as extra crafting items and utilities. \nThis guide book is for explaining the functionality of the different crafting methods in this mod. How they are implemented is decided by the modpack creator.",
       "modIds": [

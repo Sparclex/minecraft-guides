@@ -194,6 +194,17 @@ async function main() {
       .filter(Boolean)
       .map((id) => ({ id, name: nameOfMod(id), entries: book.entries.filter((e) => e.sourceMod === id).length }))
       .sort((a, b) => b.entries - a.entries)
+
+    // Books are listed under the mod they belong to rather than their in-game
+    // title ("Occultism", not "Dictionary of Spirits"). When addons write into
+    // the same book, the mod that declares it wins — the AE2 guide stays
+    // "Applied Energistics 2" even though five addons contribute pages.
+    book.title = book.name
+    book.name =
+      modsById.get(book.namespace)?.name ??
+      namespaceOwners.get(book.namespace) ??
+      book.contributors[0]?.name ??
+      book.title
   }
   books.sort((a, b) => b.entries.length - a.entries.length)
 
@@ -245,6 +256,7 @@ async function main() {
       engineLabel: book.engineLabel,
       namespace: book.namespace,
       name: book.name,
+      title: book.title,
       subtitle: book.subtitle,
       summary: plainText(book.landing).slice(0, 400).trim() || null,
       modIds: book.modIds,

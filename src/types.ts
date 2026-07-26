@@ -78,7 +78,10 @@ export interface Book {
   engineLabel: string
   namespace: string
   slug: string
+  /** The mod this book belongs to — what the site titles it with. */
   name: string
+  /** The book's own in-game title. */
+  title: string
   subtitle: string | null
   landing: Block[]
   modIds: string[]
@@ -94,6 +97,7 @@ export interface BookSummary {
   engineLabel: string
   namespace: string
   name: string
+  title: string
   subtitle: string | null
   summary: string | null
   modIds: string[]
