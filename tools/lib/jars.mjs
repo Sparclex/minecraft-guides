@@ -149,6 +149,61 @@ export async function openJar(jarPath) {
   }
 }
 
+/**
+ * Keeps a bounded number of jars open.
+ *
+ * Recipe and model lookups jump around the jar set long after the first scan
+ * has closed everything, and they cluster by namespace — so a small LRU beats
+ * both re-opening per read and holding 200 archives open at once.
+ */
+export function jarPool(limit = 16) {
+  const open = new Map() // jarPath -> { jar: Promise<jar>, refs: number }
+
+  const evict = () => {
+    for (const [jarPath, held] of open) {
+      if (open.size <= limit) return
+      // Never close an archive somebody is still streaming from.
+      if (held.refs > 0) continue
+      open.delete(jarPath)
+      held.jar.then((jar) => jar.close()).catch(() => {})
+    }
+  }
+
+  return {
+    /** Run `fn` with the jar open, keeping it open for the duration. */
+    async use(jarPath, fn) {
+      let held = open.get(jarPath)
+      if (held) {
+        // Re-insert so the most recently used jar is last in iteration order.
+        open.delete(jarPath)
+      } else {
+        held = { jar: openJar(jarPath), refs: 0 }
+      }
+      open.set(jarPath, held)
+      held.refs++
+
+      try {
+        return await fn(await held.jar)
+      } catch (e) {
+        if (!open.has(jarPath)) throw e
+        // A jar that would not even open is not worth keeping around.
+        const failed = await held.jar.then(() => false).catch(() => true)
+        if (failed) open.delete(jarPath)
+        throw e
+      } finally {
+        held.refs--
+        evict()
+      }
+    },
+
+    async closeAll() {
+      const held = [...open.values()]
+      open.clear()
+      await Promise.all(held.map((h) => h.jar.then((jar) => jar.close()).catch(() => {})))
+    },
+  }
+}
+
 function stripJsonc(text) {
   let out = ''
   let inStr = false
