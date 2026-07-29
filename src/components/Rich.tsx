@@ -1,6 +1,7 @@
 import { Fragment, type CSSProperties, type ReactNode } from 'react'
 import type { Block, Inline } from '../types'
 import { imageUrl } from '../data'
+import { RecipeGroup } from './Recipe'
 
 interface RichProps {
   /** Turns an `entry:`/`category:` href into an app route. */
@@ -258,6 +259,9 @@ function RichBlock({ block, onNavigate }: { block: Block } & RichProps) {
       )
 
     case 'recipe':
+      if (block.recipes?.length) return <RecipeGroup recipes={block.recipes} />
+      // Recipes added by a datapack or KubeJS script have no file in any jar,
+      // so all that is left to show is what the book itself named.
       return (
         <Callout tone="amber" label={`${block.kind.replace(/_/g, ' ')} recipe`}>
           <div className="flex flex-wrap gap-2">
@@ -269,7 +273,7 @@ function RichBlock({ block, onNavigate }: { block: Block } & RichProps) {
             ))}
           </div>
           <p className="mt-2 text-xs text-ink-500 dark:text-ink-400">
-            Open this recipe in JEI in-game to see the full grid.
+            This recipe is not defined in any mod jar — open it in JEI in-game to see the grid.
           </p>
         </Callout>
       )

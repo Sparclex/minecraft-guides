@@ -41,6 +41,8 @@ npm run build    # static output in dist/
 | `--project <id>` | Point at a different CurseForge modpack |
 | `--repo <owner/name>` `--ref <branch>` | Where to read the quest book from |
 | `--skip-quests` | Skip the GitHub round-trip |
+| `--skip-vanilla` | Do not fetch vanilla items; they stay text-only in recipes |
+| `--mc <version>` | Minecraft version to pair with `--mods-dir` (a mods folder has no manifest) |
 | `--out <dir>` `--cache <dir>` | Relocate output / jar cache |
 | `--pretty` | Pretty-print the JSON (much larger) |
 
@@ -48,7 +50,7 @@ Examples:
 
 ```bash
 # Build from a local CurseForge/Prism instance
-npm run generate -- --mods-dir ~/curseforge/minecraft/Instances/ATM10Lite/mods
+npm run generate -- --mods-dir ~/curseforge/minecraft/Instances/ATM10Lite/mods --mc 1.21.1
 
 # Rebuild an older pack release
 npm run generate -- --version "All The Mods 10 LITE-1.0.0"
@@ -86,15 +88,42 @@ Some details the extractors handle that are easy to get wrong:
   books store lang keys rather than English.
 
 Things that cannot be reproduced outside the game — interactive 3D scenes,
-multiblock previews, config-derived numbers and recipe grids — are rendered as
-labelled placeholders rather than silently dropped.
+multiblock previews and config-derived numbers — are rendered as labelled
+placeholders rather than silently dropped.
+
+## Recipes
+
+A guide book never contains a recipe. It contains the recipe's *name*
+(`"recipe": "croptopia:shaped_ajvar"`) and lets the running game draw the rest,
+so the grids are rebuilt from the mods' own `data/<ns>/recipe/*.json`:
+
+- **Ingredients are resolved, tags included.** A slot asking for
+  `#c:ingots/iron` lists every item the pack's mods contribute to that tag, and
+  the page cycles through them the way the in-game recipe viewer does.
+- **Any recipe type renders.** Vanilla crafting, smelting, stonecutting and
+  smithing get their proper layout; a mod's own type (AE2's inscriber,
+  Occultism's rituals, machine recipes) falls back to an
+  inputs-arrow-output row with its energy or duration alongside. Anything
+  shaped like a grid — Extended Crafting's larger tables — is drawn as one.
+- **Items are pictured.** An item's icon is found by walking its model's
+  parent chain to a texture, so block items show the face their model uses.
+- **Books that name an item, not a recipe** — GuideME's `<RecipeFor
+  id="ae2:fluix_crystal"/>` — are matched against every recipe's output.
+- **Vanilla is not in any jar.** Minecraft's own items, tags and recipes are
+  read from [misode/mcmeta](https://github.com/misode/mcmeta), which publishes
+  the unpacked vanilla files per version — cached on first use, and skippable
+  with `--skip-vanilla`. Without it, vanilla ingredients still appear, by name.
+
+Recipes added by the pack's own KubeJS scripts have no file in any jar; those
+keep the old placeholder, which now says so.
 
 ## Layout
 
 ```
 tools/
   generate.mjs          CLI entry point and orchestration
-  lib/                  jar/CDN access, SNBT, lang registry, text parsing
+  lib/                  jar/CDN access, SNBT, lang registry, text parsing,
+                        recipe + icon resolution, vanilla assets
   extract/              one module per guide system
 src/                    React + Tailwind site
 public/data/            generated — index.json, books/*.json, search.json, img/

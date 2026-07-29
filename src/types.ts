@@ -19,6 +19,41 @@ export type Inline =
   | { t: 'br' }
   | { t: 'item'; id: string; label?: string }
 
+export interface RecipeItem {
+  id: string
+  name: string
+  /** Published item texture, when the mod ships one that can be resolved. */
+  icon?: string
+}
+
+export interface RecipeSlot {
+  /** Everything that fits this slot; a tag contributes all of its members. */
+  items: RecipeItem[]
+  tag?: string
+  count?: number
+  /** Tag members beyond the ones listed. */
+  more?: number
+  fluid?: 1
+  /** Set when the recipe names the slot ("Template", "Catalyst"). */
+  label?: string
+}
+
+export interface Recipe {
+  id: string
+  /** Recipe type id, e.g. `minecraft:crafting_shaped`. */
+  type: string
+  label: string
+  source?: string | null
+  kind: 'shaped' | 'shapeless' | 'cooking' | 'stonecutting' | 'smithing' | 'generic'
+  note?: string
+  width?: number
+  height?: number
+  /** `width * height` slots, row major; null is an empty square. */
+  grid?: (RecipeSlot | null)[]
+  inputs?: RecipeSlot[]
+  result?: RecipeSlot | null
+}
+
 export type Block =
   | { k: 'para'; text: Inline[] }
   | { k: 'heading'; level: number; text: Inline[] }
@@ -29,7 +64,7 @@ export type Block =
   | { k: 'group'; blocks: Block[] }
   | { k: 'image'; src: string | null; alt: string | null }
   | { k: 'itemcard'; item: string; label?: string; text: Inline[] }
-  | { k: 'recipe'; kind: string; ids: string[]; labels: string[]; text: Inline[] }
+  | { k: 'recipe'; kind: string; ids: string[]; labels: string[]; text: Inline[]; recipes?: Recipe[] }
   | { k: 'multiblock'; name: string | null; id: string | null; text: Inline[] }
   | { k: 'entity'; entity: string; label?: string; text: Inline[] }
   | { k: 'link'; url: string; text: Inline[] }
@@ -140,6 +175,7 @@ export interface Index {
     entries: number
     pages: number
     images: number
+    recipes?: number
   }
   engines: { id: string; label: string; books: number; entries: number }[]
   mods: ModRecord[]

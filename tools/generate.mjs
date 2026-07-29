@@ -4,8 +4,10 @@
  *
  *   node tools/generate.mjs                    # download jars, rebuild everything
  *   node tools/generate.mjs --mods-dir <path>  # read an installed instance instead
+ *   node tools/generate.mjs --mc 1.21.1        # its Minecraft version
  *   node tools/generate.mjs --version 1.0.0    # pin a specific pack release
  *   node tools/generate.mjs --skip-quests      # skip the GitHub round-trip
+ *   node tools/generate.mjs --skip-vanilla     # do not fetch vanilla items
  *
  * Nothing here needs a CurseForge API key: the modlist comes from the
  * FTB-hosted CurseForge mirror and jars come off the public CDN.
@@ -15,9 +17,12 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 import { log, ensureDir, writeJson, pool, fetchRetry, splitId } from './lib/util.mjs'
-import { resolveModlist, ensureJars, jarsFromDir, openJar, readModMeta } from './lib/jars.mjs'
+import { resolveModlist, ensureJars, jarsFromDir, openJar, jarPool, readModMeta } from './lib/jars.mjs'
 import { LangRegistry, indexJarLang } from './lib/lang.mjs'
-import { plainText } from './lib/model.mjs'
+import { plainText, entryText } from './lib/model.mjs'
+import { RecipeStore } from './lib/recipes.mjs'
+import { IconResolver } from './lib/icons.mjs'
+import { VanillaAssets } from './lib/vanilla.mjs'
 
 import * as patchouli from './extract/patchouli.mjs'
 import * as modonomicon from './extract/modonomicon.mjs'
@@ -48,7 +53,8 @@ async function main() {
     pack = {
       name: 'Local instance',
       version: path.basename(opts.modsDir),
-      minecraft: null,
+      // A mods folder carries no manifest, so the version has to be told.
+      minecraft: opts.minecraft,
       website: null,
       source: opts.modsDir,
     }
@@ -65,6 +71,38 @@ async function main() {
   const sources = []
   const assetIndex = new Map() // "assets/ns/path" -> jar file path
   const modRecords = []
+  const namespaceOwners = new Map()
+
+  // Recipes and item icons are read back out of the jars long after this scan
+  // has closed them, so those lookups run through a small pool of re-openable
+  // archives rather than holding every jar open.
+  const jars = jarPool()
+  const vanilla = new VanillaAssets({
+    version: pack.minecraft,
+    cacheDir: path.join(path.dirname(opts.cacheDir), 'vanilla'),
+    enabled: !opts.skipVanilla,
+  })
+  const images = new ImageStore({
+    assetIndex,
+    repo: opts.repo,
+    ref: opts.ref,
+    outDir: opts.outDir,
+    cacheDir: path.dirname(opts.cacheDir),
+  })
+  const icons = new IconResolver({
+    assetIndex,
+    jars,
+    vanilla,
+    emitJar: (assetPath, jarPath) => images.requestJarPath(assetPath, jarPath),
+    emitFile: (out, file) => images.requestFile(out, file),
+  })
+  const recipes = new RecipeStore({
+    lang,
+    jars,
+    vanilla,
+    icons,
+    modName: (id) => namespaceOwners.get(id) ?? null,
+  })
 
   for (const mod of mods) {
     let jar
@@ -80,8 +118,13 @@ async function main() {
       await indexJarLang(jar, lang)
 
       for (const name of jar.names) {
-        if (/^assets\/[^/]+\/textures\/.+\.(png|jpg)$/.test(name)) assetIndex.set(name, mod.path)
+        // Models join textures in the index: an item's icon is only reachable
+        // by walking its model's parent chain.
+        if (/^assets\/[^/]+\/(textures\/.+\.(png|jpg)|models\/.+\.json)$/.test(name)) {
+          assetIndex.set(name, mod.path)
+        }
       }
+      recipes.index(jar, mod.path)
 
       const hits = []
       for (const collector of COLLECTORS) hits.push(...collector.collect(jar))
@@ -116,18 +159,8 @@ async function main() {
   log.ok(`indexed ${lang.entries.size} translation keys, ${lang.names.size} item names`)
   log.ok(`found ${sources.length} guide files across ${new Set(sources.map((s) => s.modId)).size} mods`)
 
-  // ---------------------------------------------------------------- images
-  const images = new ImageStore({
-    assetIndex,
-    repo: opts.repo,
-    ref: opts.ref,
-    outDir: opts.outDir,
-    cacheDir: path.dirname(opts.cacheDir),
-  })
-
   // Namespaces usually match mod ids, but not always (`ae2` vs
   // `appliedenergistics2`), so fall back to matching the jar's own namespaces.
-  const namespaceOwners = new Map()
   for (const record of modRecords) namespaceOwners.set(record.id, record.name)
   for (const src of sources) {
     if (src.ns && !namespaceOwners.has(src.ns)) {
@@ -177,6 +210,32 @@ async function main() {
   }
 
   if (!books.length) throw new Error('no guide books were found — nothing to write')
+
+  // --------------------------------------------------------------- recipes
+  // Books only name their recipes; the grids themselves live in the mods'
+  // data folders, so they are looked up once the books are known.
+  log.step('resolving recipes')
+  if (await vanilla.probe()) {
+    // Vanilla ships no mod jar, so its item names come from the same place as
+    // its textures — without this, `minecraft:redstone` reads "Redstone".
+    lang.add('minecraft', await vanilla.json('assets/minecraft/lang/en_us.json'))
+  }
+  const recipeBlocks = books.flatMap((book) =>
+    book.entries.flatMap((entry) => entry.pages.flatMap((page) => findRecipeBlocks(page.blocks))),
+  )
+  await pool(recipeBlocks, 4, async (block) => {
+    const resolved = (await Promise.all(block.ids.map((id) => recipes.resolve(id)))).filter(Boolean)
+    if (resolved.length) block.recipes = resolved
+  })
+  recipes.report()
+  log.ok(`${icons.found} item icons resolved${icons.missing.size ? `, ${icons.missing.size} without art` : ''}`)
+  await jars.closeAll()
+
+  // Ingredients only exist now, so the searchable text is rebuilt to include
+  // them — "iron ingot" should find the pages that craft with one.
+  for (const book of books) {
+    for (const entry of book.entries) entry.text = entryText(entry)
+  }
 
   // ---------------------------------------------------------------- assets
   log.step('extracting referenced images')
@@ -242,6 +301,7 @@ async function main() {
       entries: books.reduce((n, b) => n + b.entries.length, 0),
       pages: books.reduce((n, b) => n + b.entries.reduce((m, e) => m + e.pages.length, 0), 0),
       images: written,
+      recipes: recipeBlocks.filter((b) => b.recipes?.length).length,
     },
     engines: [...new Set(books.map((b) => b.engine))].map((id) => ({
       id,
@@ -282,6 +342,15 @@ async function main() {
   log.info(`output: ${path.relative(ROOT, opts.outDir)}`)
 }
 
+/** Every recipe block in a page, including the ones nested inside groups. */
+function findRecipeBlocks(blocks, out = []) {
+  for (const block of blocks ?? []) {
+    if (block?.k === 'recipe') out.push(block)
+    if (Array.isArray(block?.blocks)) findRecipeBlocks(block.blocks, out)
+  }
+  return out
+}
+
 /**
  * Collects image requests during the build, then extracts the referenced
  * files once — from a mod jar when possible, otherwise from the pack repo.
@@ -297,6 +366,7 @@ class ImageStore {
     this.cache = path.join(cacheDir, 'repo-images')
     this.fromJars = new Map() // outputRelPath -> { jarPath, entry }
     this.fromRepo = new Map() // outputRelPath -> repo path
+    this.fromFile = new Map() // outputRelPath -> absolute source path
     this.missing = new Set()
   }
 
@@ -322,6 +392,13 @@ class ImageStore {
     if (!entry || !jarPath) return null
     const out = entry.replace(/^assets\//, '')
     this.fromJars.set(out, { jarPath, entry })
+    return `data/img/${out}`
+  }
+
+  /** A file already on disk (vanilla item textures land in the cache first). */
+  requestFile(out, file) {
+    if (!out || !file) return null
+    this.fromFile.set(out, file)
     return `data/img/${out}`
   }
 
@@ -363,6 +440,11 @@ class ImageStore {
       }
     }
 
+    for (const [out, file] of this.fromFile) {
+      if (fs.existsSync(file)) write(out, fs.readFileSync(file))
+      else this.missing.add(file)
+    }
+
     await pool([...this.fromRepo], concurrency, async ([out, repoPath]) => {
       const cached = path.join(this.cache, out)
       if (fs.existsSync(cached)) {
@@ -399,9 +481,11 @@ function parseArgs(argv) {
     cacheDir: DEFAULTS.cacheDir,
     outDir: DEFAULTS.outDir,
     modsDir: null,
+    minecraft: null,
     concurrency: 10,
     pretty: false,
     skipQuests: false,
+    skipVanilla: false,
   }
 
   for (let i = 0; i < argv.length; i++) {
@@ -409,6 +493,7 @@ function parseArgs(argv) {
     const next = () => argv[++i]
     switch (arg) {
       case '--mods-dir': opts.modsDir = path.resolve(next()); break
+      case '--mc': opts.minecraft = next(); break
       case '--project': opts.projectId = Number(next()); break
       case '--version': opts.version = next(); break
       case '--repo': opts.repo = next(); break
@@ -418,6 +503,7 @@ function parseArgs(argv) {
       case '--concurrency': opts.concurrency = Number(next()); break
       case '--pretty': opts.pretty = true; break
       case '--skip-quests': opts.skipQuests = true; break
+      case '--skip-vanilla': opts.skipVanilla = true; break
       case '--help':
       case '-h':
         console.log(fs.readFileSync(new URL(import.meta.url), 'utf8').split('*/')[0].replace(/^\/\*\*?|^ \* ?/gm, ''))

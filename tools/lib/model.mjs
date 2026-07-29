@@ -33,8 +33,17 @@ export function plainText(node) {
       return node.alt ? `${node.alt}\n` : ''
     case 'itemcard':
       return `${node.label ?? node.item ?? ''}\n${plainText(node.text)}\n`
-    case 'recipe':
-      return `${(node.labels ?? []).join(' ')}\n${plainText(node.text)}\n`
+    case 'recipe': {
+      // Searching for "iron ingot" should find the pages that craft with it.
+      const parts = [...(node.labels ?? [])]
+      for (const recipe of node.recipes ?? []) {
+        parts.push(recipe.label)
+        for (const slot of [...(recipe.grid ?? []), ...(recipe.inputs ?? []), recipe.result]) {
+          for (const item of slot?.items ?? []) parts.push(item.name)
+        }
+      }
+      return `${[...new Set(parts.filter(Boolean))].join(' ')}\n${plainText(node.text)}\n`
+    }
     case 'multiblock':
       return `${node.name ?? ''}\n${plainText(node.text)}\n`
     case 'entity':
