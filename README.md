@@ -32,6 +32,19 @@ npm run dev      # http://localhost:5173
 npm run build    # static output in dist/
 ```
 
+## Deployment
+
+The site is a plain static bundle, hosted on **GitHub Pages** at
+<https://sparclex.github.io/minecraft-guides/>.
+
+`.github/workflows/deploy.yml` builds and publishes on every push to `main`
+(and on manual dispatch). Nothing else is needed — the generated content in
+`public/data/` is committed, so CI only runs `npm ci && npm run build` and
+uploads `dist/`.
+
+To publish new guide content, run `npm run generate`, commit the changes under
+`public/data/`, and push.
+
 ### Options
 
 | Flag | Purpose |
